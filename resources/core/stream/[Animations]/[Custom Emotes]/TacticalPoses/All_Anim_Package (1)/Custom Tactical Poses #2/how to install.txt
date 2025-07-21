@@ -1,0 +1,115 @@
+Thank you for your purchase.
+
+Singleplayer
+
+How to install:
+
+1. Use Jennie's custom anims mod add-on folder.
+https://www.gta5-mods.com/misc/custom-animations-add-on-customanims
+
+2. Drag the .ycd files to clip_amb@.rpf file.
+
+3. Put this line to menyoostuff/favoriteanims.xml
+
+	<Anim dict="anim@javelin_sit" name="javelin_sit_clip" />
+    	<Anim dict="anim@rifle_radio_pose" name="rifle_radio_pose_clip" />
+    	<Anim dict="anim@rifle_radio_pose_2" name="rifle_radio_pose_2_clip" />
+    	<Anim dict="anim@rifle_prep_pose" name="rifle_prep_pose_clip" />
+    	<Anim dict="anim@rifle_kneel_pose_2" name="rifle_kneel_pose_2_clip" />
+	<Anim dict="anim@rifle_kneel_pose_3" name="rifle_kneel_pose_3_clip" />
+    	<Anim dict="anim@rifle_peek_corner" name="rifle_peek_corner_clip" />
+    	<Anim dict="anim@rifle_peek_corner_2" name="rifle_peek_corner_2_clip" />
+    	<Anim dict="anim@rifle_pose_peace" name="rifle_pose_peace_clip" />
+
+DPEMOTES USERS ON FIVEM: 
+
+NOTE: For prop placement, please use this guide
+https://forum.cfx.re/t/how-to-menyoo-to-dpemotes-conversion-streaming-custom-add-on-props/4775018
+
+Place the ycd files into this folder:
+
+resources/dpemotes-master/streams 
+
+Then copy this line into your AnimationList.lua 
+
+["javelinsit"] = {
+        "anim@javelin_sit",
+        "javelin_sit_clip",
+        "Javelin Sit",
+        AnimationOptions = {
+            EmoteLoop = true,
+            EmoteMoving = false,
+        }
+    },
+["rifleradiopose"] = {
+        "anim@rifle_radio_pose",
+        "rifle_radio_pose_clip",
+        "Rifle Radio Pose",
+        AnimationOptions = {
+            EmoteLoop = true,
+            EmoteMoving = false,
+        }
+    },
+["rifleradiopose2"] = {
+        "anim@rifle_radio_pose_2",
+        "rifle_radio_pose_2_clip",
+        "Rifle Radio Pose 2",
+        AnimationOptions = {
+            EmoteLoop = true,
+            EmoteMoving = false,
+        }
+    },
+["riflepreppose"] = {
+        "anim@rifle_prep_pose",
+        "rifle_prep_pose_clip",
+        "Rifle Prep Pose",
+        AnimationOptions = {
+            EmoteLoop = true,
+            EmoteMoving = false,
+        }
+    },
+["riflekneelpose2"] = {
+        "anim@rifle_kneel_pose_2",
+        "rifle_kneel_pose_2_clip",
+        "Rifle Kneel Pose 2",
+        AnimationOptions = {
+            EmoteLoop = true,
+            EmoteMoving = false,
+        }
+    },
+["riflekneelpose3"] = {
+        "anim@rifle_kneel_pose_3",
+        "rifle_kneel_pose_3_clip",
+        "Rifle Kneel Pose 3",
+        AnimationOptions = {
+            EmoteLoop = true,
+            EmoteMoving = false,
+        }
+    },
+["riflepeekcorner"] = {
+        "anim@rifle_peek_corner",
+        "rifle_peek_corner_clip",
+        "Rifle Peek Corner",
+        AnimationOptions = {
+            EmoteLoop = true,
+            EmoteMoving = false,
+        }
+    },
+["riflepeekcorner2"] = {
+        "anim@rifle_peek_corner_2",
+        "rifle_peek_corner_2_clip",
+        "Rifle Peek Corner 2",
+        AnimationOptions = {
+            EmoteLoop = true,
+            EmoteMoving = false,
+        }
+    },
+["rifleposepeace"] = {
+        "anim@rifle_pose_peace",
+        "rifle_pose_peace_clip",
+        "Rifle Pose Peace",
+        AnimationOptions = {
+            EmoteLoop = true,
+            EmoteMoving = false,
+        }
+    },

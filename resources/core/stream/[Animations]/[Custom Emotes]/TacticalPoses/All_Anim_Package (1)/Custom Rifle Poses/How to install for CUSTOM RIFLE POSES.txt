@@ -1,0 +1,92 @@
+Thank you for your purchase.
+
+Singleplayer
+
+How to install:
+
+1. Use Jennie's custom anims mod add-on folder.
+https://www.gta5-mods.com/misc/custom-animations-add-on-customanims
+
+2. Drag the .ycd files to clip_amb@.rpf file.
+
+3. Put this line to menyoostuff/favoriteanims.xml
+
+	<Anim dict="anim@aim_injured" name="aim_injured_clip" />
+	<Anim dict="anim@aim_radio" name="aim_radio_clip" />
+	<Anim dict="anim@weapon_drag" name="weapon_drag_clip" />
+	<Anim dict="anim@vertical_high_ready" name="vertical_high_ready_clip" />
+	<Anim dict="anim@vertical_aim" name="vertical_aim_clip" />
+	<Anim dict="anim@vertical_grip_pose" name="vertical_grip_pose_clip" />
+	<Anim dict="anim@male@stay_down" name="staydown_clip" />
+
+DPEMOTES USERS ON FIVEM: 
+
+Place the ycd files into this folder:
+
+resources/dpemotes-master/streams 
+
+Then copy this line into your AnimationList.lua 
+
+["aiminjured"] = {
+        "anim@aim_injured",
+        "aim_injured_clip",
+        "Aim Injured",
+        AnimationOptions = {
+            EmoteLoop = true,
+            EmoteMoving = false,
+        }
+    },
+["aimradio"] = {
+        "anim@aim_radio",
+        "aim_radio_clip",
+        "Aim Radio",
+        AnimationOptions = {
+            EmoteLoop = true,
+            EmoteMoving = false,
+        }
+    },
+["weapondrag"] = {
+        "anim@weapon_drag",
+        "weapon_drag_clip",
+        "Weapon Drag",
+        AnimationOptions = {
+            EmoteLoop = true,
+            EmoteMoving = false,
+        }
+    },
+["verticalhighready"] = {
+        "anim@vertical_high_ready",
+        "vertical_high_ready_clip",
+        "Vertical High Ready",
+        AnimationOptions = {
+            EmoteLoop = true,
+            EmoteMoving = false,
+        }
+    },
+["verticalaim"] = {
+        "anim@vertical_aim",
+        "vertical_aim_clip",
+        "Vertical Aim",
+        AnimationOptions = {
+            EmoteLoop = true,
+            EmoteMoving = false,
+        }
+    },
+["verticalgrippose"] = {
+        "anim@vertical_grip_pose",
+        "vertical_grip_pose_clip",
+        "Vertical Grip Pose",
+        AnimationOptions = {
+            EmoteLoop = true,
+            EmoteMoving = false,
+        }
+    },
+["staydown"] = {
+        "anim@male@stay_down",
+        "staydown_clip",
+        "Stay Down",
+        AnimationOptions = {
+            EmoteLoop = true,
+            EmoteMoving = false,
+        }
+    },

@@ -1,0 +1,246 @@
+--local lastEntity = false
+--local lastModel = false
+--local defaultCategory = "Avions"
+--local lastPos = nil
+--
+--VFW.Boatdealer.VehicleProd = {}
+--
+--local function deleteBoat()
+--    if lastEntity and DoesEntityExist(lastEntity) then
+--        SetEntityAsMissionEntity(lastEntity, true, true)
+--        SetEntityAsNoLongerNeeded(lastEntity)
+--        DeleteEntity(lastEntity)
+--        lastEntity = false
+--        lastModel = false
+--        console.debug("Entity successfully deleted when closing.")
+--    else
+--        console.debug("No entity to delete or entity already deleted when closing.")
+--    end
+--end
+--
+--local function getCategoryIndex(category)
+--    local data = {
+--        ["Avions"] = 0,
+--        ["Hélicopters"] = 1,
+--        ["Bateaux"] = 2,
+--    }
+--
+--    return data[category]
+--end
+--
+--local function getSpawnIndex(category)
+--    local data = {
+--        ["Avions"] = {x = -999.6434936523438, y = -3337.73095703125, z = 15.11338806152343, w = 59.71043395996094},
+--        ["Hélicopters"] = {x = -733.9427490234375, y = -1461.2437744140626, z = 5.67763710021972, w = 233.09017944335938},
+--        ["Bateaux"] = { x = -859.773681640625, y = -1380.216552734375, z = 0.43730491399765, w = 21.6694278717041 },
+--    }
+--
+--    return data[category]
+--end
+--
+--local function getCategory(category)
+--    for category, vehicles in pairs(VFW.Boatdealer.Vehicle) do
+--        VFW.Boatdealer.VehicleProd[category] = {}
+--        if type(vehicles) == "table" then
+--            for _, vehicle in ipairs(vehicles) do
+--                local tempCatalogue = {
+--                    label = vehicle.label or vehicle.model,
+--                    model = vehicle.model,
+--                    image = "vehicules/"..vehicle.model..".webp",
+--                    price = VFW.Math.GroupDigits(vehicle.price),
+--                    premium = false
+--                }
+--                table.insert(VFW.Boatdealer.VehicleProd[category], tempCatalogue)
+--            end
+--        end
+--    end
+--    console.debug(json.encode(VFW.Boatdealer.VehicleProd[category]))
+--    return VFW.Boatdealer.VehicleProd[category]
+--end
+--
+--function VFW.Boatdealer.MenuConfig(pos)
+--    lastPos = pos
+--    console.debug("VFW.Boatdealer.MenuConfig")
+--    local data = {
+--        style = {
+--            menuStyle = "custom",
+--            backgroundType = 1,
+--            bannerType = 2,
+--            gridType = 1,
+--            buyType = 2,
+--            bannerImg = "assets/catalogues/headers/heliwave.webp",
+--            lineColor = "linear-gradient(to right, rgba(255, 255, 255, .6) 0%, rgba(255, 255, 255, .6) 56%, rgba(255, 255, 255, 0) 100%)",
+--            title = "HELIWAVE",
+--            buyTextType = "price",
+--        },
+--        eventName = "boatdealer",
+--        showStats = { show = false },
+--        mouseEvents = true,
+--        color = { show = false },
+--        nameContainer = { show = false },
+--        headCategory = {
+--            show = true,
+--            items = {
+--                { id = "", label = defaultCategory },
+--            }
+--        },
+--        category = {
+--            show = true,
+--            defaultIndex = getCategoryIndex(defaultCategory),
+--            items = {
+--                {id = "Avions", label = "Avions", image = "vehicules/seabreeze.webp"},
+--                {id = "Hélicopters", label = "Hélicopters", image = "vehicules/supervolito.webp"},
+--                {id = "Bateaux", label = "Bateaux", image = "vehicules/suntrap.webp"},
+--            }
+--        },
+--        color = { show = false },
+--        cameras = { show = false },
+--        items = getCategory(defaultCategory)
+--    }
+--    console.debug(json.encode(data.items))
+--    return data
+--end
+--
+--RegisterNuiCallback("nui:newgrandcatalogue:boatdealer:selectGridType", function(data)
+--    console.debug("nui:newgrandcatalogue:selectGridType", data)
+--    local model = data
+--    if model then
+--        if lastModel ~= model then
+--            RequestModel(model)
+--            while not HasModelLoaded(model) do
+--                Wait(0)
+--            end
+--
+--            if lastEntity and DoesEntityExist(lastEntity) then
+--                SetEntityAsMissionEntity(lastEntity, true, true)
+--                SetEntityAsNoLongerNeeded(lastEntity)
+--                DeleteEntity(lastEntity)
+--                if not DoesEntityExist(lastEntity) then
+--                    console.debug("Entity successfully deleted.")
+--                else
+--                    console.debug("Failed to delete entity.")
+--                end
+--                lastEntity = false
+--            end
+--            VFW.Game.SpawnVehicle(model, vector3(getSpawnIndex(defaultCategory).x, getSpawnIndex(defaultCategory).y, getSpawnIndex(defaultCategory).z), getSpawnIndex(defaultCategory).w, function(vehicle)
+--                FreezeEntityPosition(vehicle, true)
+--                SetEntityAsMissionEntity(vehicle, true, true)
+--                SetVehicleOnGroundProperly(vehicle)
+--                SetVehicleDoorsLocked(vehicle, 2)
+--                SetVehicleEngineOn(vehicle, true, true, true)
+--                SetVehicleLights(vehicle, 2)
+--                SetModelAsNoLongerNeeded(lastModel)
+--                lastModel = model
+--                lastEntity = vehicle
+--                cEntity.Visual.AddEntityToException(vehicle)
+--            end, false)
+--        end
+--    end
+--end)
+--
+--RegisterNuiCallback("nui:newgrandcatalogue:boatdealer:selectBuy", function(data)
+--    TriggerServerEvent("vfw:boatdealer:buy", data, VFW.Game.GetVehicleProperties(lastEntity), getSpawnIndex(defaultCategory), GetMakeNameFromVehicleModel(data))
+--end)
+--
+--RegisterNetEvent("vfw:boatdealer:hasBuying", function()
+--    if lastEntity and DoesEntityExist(lastEntity) then
+--        SetEntityAsMissionEntity(lastEntity, true, true)
+--        SetEntityAsNoLongerNeeded(lastEntity)
+--        DeleteEntity(lastEntity)
+--        lastEntity = false
+--        console.debug("Entity successfully deleted when closing.")
+--    else
+--        console.debug("No entity to delete or entity already deleted when closing.")
+--    end
+--    deleteBoat()
+--    defaultCategory = "Avions"
+--    cEntity.Visual.HideAllEntities(false)
+--    VFW.Nui.NewGrandMenu(false)
+--    VFW.Cam:Destroy('boatdealer')
+--end)
+--
+--RegisterNuiCallback("nui:newgrandcatalogue:boatdealer:selectCategory", function(data)
+--    console.debug("nui:newgrandcatalogue:selectCategory", data)
+--    defaultCategory = data
+--    Wait(50)
+--    console.debug(defaultCategory)
+--    deleteBoat()
+--    if data == "Avions" then
+--        SetEntityCoords(PlayerPedId(-1), -999.6434936523438, -3337.73095703125, 15.11338806152343)
+--        FreezeEntityPosition(PlayerPedId(-1), true)
+--        VFW.Cam:Update("boatdealer", {
+--            Fov = 70.1,
+--            CamCoords = { x = -1015.6857299804688, y = -3334.05224609375, z = 15.06858158111572 },
+--            COH = { x = -999.6434936523438, y = -3337.73095703125, z = 15.11338806152343, w = 59.71043395996094 },
+--            DofStrength = 0.2,
+--            Dof = true,
+--            Freeze = false,
+--            Invisible = true,
+--            CamRot = { x = -0.75826346874237, y = -1.6675265612775548e-9, z = -87.95004272460938 }
+--        })
+--    elseif data == "Hélicopters" then
+--        SetEntityCoords(PlayerPedId(-1), -733.9427490234375, -1461.2437744140626, 5.67763710021972)
+--        FreezeEntityPosition(PlayerPedId(-1), true)
+--        VFW.Cam:Update("boatdealer", {
+--            Vehicle = -1671539132,
+--            Freeze = false,
+--            DofStrength = 0.8,
+--            CamCoords = { x = -726.6094970703125, y = -1462.7930908203126, z = 5.53415298461914 },
+--            Invisible = true,
+--            CamRot = { x = -0.08322175592184, y = 4.168816403193887e-10, z = 85.80376434326172 },
+--            Fov = 50.1,
+--            COH = { x = -733.9427490234375, y = -1461.2437744140626, z = 5.67763710021972, w = 233.09017944335938 },
+--            Dof = true
+--        })
+--    elseif data == "Bateaux" then
+--        SetEntityCoords(PlayerPedId(-1), -859.773681640625, -1380.216552734375, 0.43730491399765)
+--        FreezeEntityPosition(PlayerPedId(-1), true)
+--        VFW.Cam:Update("boatdealer", {
+--            Vehicle = -282946103,
+--            Freeze = false,
+--            DofStrength = 0.6,
+--            CamCoords = { x = -864.3302612304688, y = -1375.0924072265626, z = 0.95681345462799 },
+--            Invisible = false,
+--            CamRot = { x = -0.74472385644912, y = -0.0, z = -128.43911743164063 },
+--            Fov = 40.1,
+--            COH = { x = -859.773681640625, y = -1380.216552734375, z = 0.43730491399765, w = 21.6694278717041 },
+--            Dof = true
+--        })
+--    end
+--    VFW.Nui.UpdateNewGrandMenu(VFW.Boatdealer.MenuConfig(lastPos))
+--end)
+--
+--RegisterNuiCallback("nui:newgrandcatalogue:boatdealer:mouseEvents", function(data)
+--    SetEntityHeading(lastEntity, GetEntityHeading(lastEntity) + (0.5 * data.x))
+--end)
+--
+--RegisterNUICallback("nui:newgrandcatalogue:boatdealer:close", function()
+--    deleteBoat()
+--    cEntity.Visual.HideAllEntities(false)
+--    VFW.Nui.NewGrandMenu(false)
+--    VFW.Cam:Destroy('boatdealer')
+--    SetEntityCoords(PlayerPedId(-1), lastPos.x, lastPos.y, lastPos.z)
+--end)
+--
+--Wait(2000)
+--
+--for k, v in pairs(Config.Features.Boatdealer.Position) do
+--    VFW.CreateBlipAndPoint("boatdealer", v, k, false, false, false, false, "HeliWave", "E", "Catalogue",{
+--        onPress = function()
+--            VFW.Nui.NewGrandMenu(true, VFW.Boatdealer.MenuConfig(v))
+--            cEntity.Visual.HideAllEntities(true)
+--            VFW.Cam:Create("boatdealer", {
+--                Fov = 70.1,
+--                CamCoords = { x = -1015.6857299804688, y = -3334.05224609375, z = 15.06858158111572 },
+--                COH = { x = -999.6434936523438, y = -3337.73095703125, z = 15.11338806152343, w = 59.71043395996094 },
+--                DofStrength = 0.2,
+--                Dof = true,
+--                Freeze = false,
+--                Invisible = true,
+--                CamRot = { x = -0.75826346874237, y = -1.6675265612775548e-9, z = -87.95004272460938 }
+--            })
+--            SetEntityCoords(PlayerPedId(-1), -999.6434936523438, -3337.73095703125, 15.11338806152343)
+--            FreezeEntityPosition(PlayerPedId(-1), true)
+--        end
+--    })
+--end

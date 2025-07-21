@@ -1,0 +1,189 @@
+Thank you for your purchase.
+
+Singleplayer
+
+How to install:
+
+1. Use Jennie's custom anims mod add-on folder.
+https://www.gta5-mods.com/misc/custom-animations-add-on-customanims
+
+2. Drag the .ycd files to clip_amb@.rpf file.
+
+3. Put this line to menyoostuff/favoriteanims.xml
+
+	<Anim dict="anim@male@aim_weapon_3" name="aim_weapon_3_clip" />
+	<Anim dict="anim@male@aim_weapon_sit" name="aim_weapon_sit_clip" />
+	<Anim dict="anim@male@handgun_pose" name="handgun_pose_clip" />
+	<Anim dict="anim@male@handgun_pose_2" name="handgun_pose_2_clip" />
+	<Anim dict="anim@male@holding_weapon_7" name="holding_weapon_7_clip" />
+
+DPEMOTES USERS ON FIVEM: 
+
+Place the ycd files into this folder:
+
+resources/dpemotes-master/streams 
+
+Then copy this line into your AnimationList.lua 
+
+["aimweapon3"] = {
+        "anim@male@aim_weapon_3",
+        "aim_weapon_3_clip",
+        "Aim Weapon 3",
+        AnimationOptions = {
+            EmoteLoop = true,
+            EmoteMoving = false,
+        }
+    },
+["aimweaponsit"] = {
+        "anim@male@aim_weapon_sit",
+        "aim_weapon_sit_clip",
+        "Aim Weapon Sit",
+        AnimationOptions = {
+            EmoteLoop = true,
+            EmoteMoving = false,
+        }
+    },
+["handgunpose"] = {
+        "anim@male@handgun_pose",
+        "handgun_pose_clip",
+        "Handgun Pose",
+        AnimationOptions = {
+            EmoteLoop = true,
+            EmoteMoving = false,
+        }
+    },
+["handgunpose2"] = {
+        "anim@male@handgun_pose_2",
+        "handgun_pose_2_clip",
+        "Handgun Pose 2",
+        AnimationOptions = {
+            EmoteLoop = true,
+            EmoteMoving = false,
+        }
+    },
+["holdingweapon7"] = {
+        "anim@male@holding_weapon_7",
+        "holding_weapon_7_clip",
+        "Holding Weapon 7",
+        AnimationOptions = {
+            EmoteLoop = true,
+            EmoteMoving = false,
+        }
+    },
+["aimweapon6"] = {
+        "anim@male@aim_weapon_6",
+        "aim_weapon_6_clip",
+        "Aim Weapon 6",
+        AnimationOptions = {
+            EmoteLoop = true,
+            EmoteMoving = false,
+        }
+    },
+["aimweapon6kneel"] = {
+        "anim@male@aim_weapon_6_kneel",
+        "aim_weapon_6_kneel_clip",
+        "Aim Weapon 6 Kneel",
+        AnimationOptions = {
+            EmoteLoop = true,
+            EmoteMoving = false,
+        }
+    },
+["aimweapon6walk"] = {
+        "anim@male@aim_weapon_6_walk",
+        "aim_weapon_6_walk_clip",
+        "Aim Weapon 6 Walk",
+        AnimationOptions = {
+            EmoteLoop = true,
+            EmoteMoving = false,
+        }
+    },
+["aimweapon6ak"] = {
+        "anim@male@aim_weapon_6_ak",
+        "aim_weapon_6_ak_clip",
+        "Aim Weapon 6 AK",
+        AnimationOptions = {
+            EmoteLoop = true,
+            EmoteMoving = false,
+        }
+    },
+["aimweapon6akkneel"] = {
+        "anim@male@aim_weapon_6_ak_kneel",
+        "aim_weapon_6_ak_kneel_clip",
+        "Aim Weapon 6 AK Kneel",
+        AnimationOptions = {
+            EmoteLoop = true,
+            EmoteMoving = false,
+        }
+    },
+["aimcar"] = {
+        "anim@aim_car",
+        "aim_car_clip",
+        "Aim Car",
+        AnimationOptions = {
+            EmoteLoop = true,
+            EmoteMoving = false,
+        }
+    },
+["stackpistol"] = {
+        "anim@stack_pistol",
+        "stack_pistol_clip",
+        "Stack Pistol",
+        AnimationOptions = {
+            EmoteLoop = true,
+            EmoteMoving = false,
+        }
+    },
+["aimup"] = {
+        "anim@aim_up",
+        "aim_up_clip",
+        "Aim Up",
+        AnimationOptions = {
+            EmoteLoop = true,
+            EmoteMoving = false,
+        }
+    },
+["aimweapon3"] = {
+        "anim@male@aim_weapon_3",
+        "aim_weapon_3_clip",
+        "Aim Weapon 3",
+        AnimationOptions = {
+            EmoteLoop = true,
+            EmoteMoving = false,
+        }
+    },
+["aimweaponsit"] = {
+        "anim@male@aim_weapon_sit",
+        "aim_weapon_sit_clip",
+        "Aim Weapon Sit",
+        AnimationOptions = {
+            EmoteLoop = true,
+            EmoteMoving = false,
+        }
+    },
+["handgunpose"] = {
+        "anim@male@handgun_pose",
+        "handgun_pose_clip",
+        "Handgun Pose",
+        AnimationOptions = {
+            EmoteLoop = true,
+            EmoteMoving = false,
+        }
+    },
+["handgunpose2"] = {
+        "anim@male@handgun_pose_2",
+        "handgun_pose_2_clip",
+        "Handgun Pose 2",
+        AnimationOptions = {
+            EmoteLoop = true,
+            EmoteMoving = false,
+        }
+    },
+["holdingweapon7"] = {
+        "anim@male@holding_weapon_7",
+        "holding_weapon_7_clip",
+        "Holding Weapon 7",
+        AnimationOptions = {
+            EmoteLoop = true,
+            EmoteMoving = false,
+        }
+    },

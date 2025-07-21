@@ -1,0 +1,3 @@
+-- VFW.RegisterUsableItem("ammo30",function()
+--    print("toto")
+-- end)

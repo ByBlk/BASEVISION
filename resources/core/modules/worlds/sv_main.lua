@@ -1,0 +1,2 @@
+---@class Worlds
+Worlds = {}

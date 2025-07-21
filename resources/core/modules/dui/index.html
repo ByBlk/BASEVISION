@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interact</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="InteractContainer">
+        <div id="point" class="Point">
+            <svg xmlns="http://www.w3.org/2000/svg" width="200" height="200" viewBox="0 0 200 200">
+                <defs>
+                    <linearGradient id="gradient" x1="0%" y1="0%" x2="0%" y2="100%">
+                        <stop id="gradient-stop-1" offset="0%" stop-color="#FFFFFF" stop-opacity="1" />
+                        <stop id="gradient-stop-2" offset="100%" stop-color="#CACACA" stop-opacity="0.5" />
+                    </linearGradient>
+                    <linearGradient id="gradient2" x1="0%" y1="0%" x2="0%" y2="100%">
+                        <stop id="gradient2-stop-1" offset="0%" stop-color="#D9D9D9" stop-opacity="1" />
+                        <stop id="gradient2-stop-2" offset="100%" stop-color="#EFEFEF" stop-opacity="1" />
+                    </linearGradient>
+                    <filter id="glow" x="-50%" y="-50%" width="200%" height="200%">
+                        <feGaussianBlur stdDeviation="8" result="coloredBlur" />
+                        <feMerge>
+                            <feMergeNode in="coloredBlur" />
+                            <feMergeNode in="SourceGraphic" />
+                        </feMerge>
+                    </filter>
+                </defs>
+                <circle id="outer-circle" cx="100" cy="100" r="60" stroke="url(#gradient)" stroke-width="5" fill="none" />
+                <circle id="inner-circle" cx="100" cy="100" r="15" fill="url(#gradient2)" filter="url(#glow)" />
+            </svg>
+        </div>
+
+        <div id="interact" class="Interact">
+            <div class="key"><p id="key-text"></p></div>
+            <div class="label"><p id="label-text"></p></div>
+            <div class="icons"><img id="icon-img" alt="icon"></div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+    
+</body>
+</html>

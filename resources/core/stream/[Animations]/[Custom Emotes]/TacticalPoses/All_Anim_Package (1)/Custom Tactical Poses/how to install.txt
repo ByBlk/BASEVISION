@@ -1,0 +1,102 @@
+Thank you for your purchase.
+
+Singleplayer
+
+How to install:
+
+1. Use Jennie's custom anims mod add-on folder.
+https://www.gta5-mods.com/misc/custom-animations-add-on-customanims
+
+2. Drag the .ycd files to clip_amb@.rpf file.
+
+3. Put this line to menyoostuff/favoriteanims.xml
+
+	<Anim dict="anim@carrying_person" name="carrying_person_clip" />
+    	<Anim dict="anim@being _carried" name="being _carried_clip" />
+    	<Anim dict="anim@vertical_near_aim_walk" name="vertical_near_aim_walk_clip" />
+    	<Anim dict="anim@vertical_near_aim_kneel" name="vertical_near_aim_kneel_clip" />
+	<Anim dict="anim@vertical_aim_near" name="vertical_aim_near_clip" />
+	<Anim dict="anim@rifle_run" name="rifle_run_clip" />
+   	<Anim dict="anim@rifle_kneel_adv" name="rifle_kneel_adv_clip" />
+   	<Anim dict="anim@rifle_kneel_adv_holding" name="rifle_kneel_adv_holding_clip" />
+
+DPEMOTES USERS ON FIVEM: 
+
+Place the ycd files into this folder:
+
+resources/dpemotes-master/streams 
+
+Then copy this line into your AnimationList.lua 
+
+["carryingperson"] = {
+        "anim@carrying_person",
+        "carrying_person_clip",
+        "Carrying Person",
+        AnimationOptions = {
+            EmoteLoop = true,
+            EmoteMoving = false,
+        }
+    },
+["beingcarried"] = {
+        "anim@being _carried",
+        "being _carried_clip",
+        "Being Carried",
+        AnimationOptions = {
+            EmoteLoop = true,
+            EmoteMoving = false,
+        }
+    },
+["verticalnearaimwalk"] = {
+        "anim@vertical_near_aim_walk",
+        "vertical_near_aim_walk_clip",
+        "Vertical Near Aim Walk",
+        AnimationOptions = {
+            EmoteLoop = true,
+            EmoteMoving = false,
+        }
+    },
+["verticalnearaimkneel"] = {
+        "anim@vertical_near_aim_kneel",
+        "vertical_near_aim_kneel_clip",
+        "Vertical Near Aim Kneel",
+        AnimationOptions = {
+            EmoteLoop = true,
+            EmoteMoving = false,
+        }
+    },
+["verticalaimnear"] = {
+        "anim@vertical_aim_near",
+        "vertical_aim_near_clip",
+        "Vertical Aim Near",
+        AnimationOptions = {
+            EmoteLoop = true,
+            EmoteMoving = false,
+        }
+    },
+["riflerun"] = {
+        "anim@rifle_run",
+        "rifle_run_clip",
+        "Rifle Run",
+        AnimationOptions = {
+            EmoteLoop = true,
+            EmoteMoving = false,
+        }
+    },
+["riflekneeladv"] = {
+        "anim@rifle_kneel_adv",
+        "rifle_kneel_adv_clip",
+        "Rifle Kneel Adv",
+        AnimationOptions = {
+            EmoteLoop = true,
+            EmoteMoving = false,
+        }
+    },
+["riflekneeladvholding"] = {
+        "anim@rifle_kneel_adv_holding",
+        "rifle_kneel_adv_holding_clip",
+        "Rifle Kneel Adv Holding",
+        AnimationOptions = {
+            EmoteLoop = true,
+            EmoteMoving = false,
+        }
+    },
