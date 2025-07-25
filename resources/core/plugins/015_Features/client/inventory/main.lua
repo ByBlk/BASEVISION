@@ -147,28 +147,28 @@ function VFW.LoadInventory()
                     if (v.name == "accessory") then
                         if (v.meta.type ~= "bracelet") and (v.meta.type ~= "earring") and (v.meta.type ~= "glasses") and (v.meta.type ~= "hat") and (v.meta.type ~= "watch") then
                             if v.meta.var > 0 then
-                                currentItem.url = ('https://cdn.eltrane.cloud/alkiarp/outfits_greenscreener/%s/%s/%s/%s.webp'):format(sex[v.meta.sex], "clothing", imgType[v.meta.type], v.meta.id .. "_"..v.meta.var)
+                                currentItem.url = ('https://cdn.eltrane.cloud/3838384859/outfits_greenscreener/%s/%s/%s/%s.webp'):format(sex[v.meta.sex], "clothing", imgType[v.meta.type], v.meta.id .. "_"..v.meta.var)
                             else
-                                currentItem.url = ('https://cdn.eltrane.cloud/alkiarp/outfits_greenscreener/%s/%s/%s/%s.webp'):format(sex[v.meta.sex], "clothing", imgType[v.meta.type], v.meta.id)
+                                currentItem.url = ('https://cdn.eltrane.cloud/3838384859/outfits_greenscreener/%s/%s/%s/%s.webp'):format(sex[v.meta.sex], "clothing", imgType[v.meta.type], v.meta.id)
                             end
                         else
                             if v.meta.var > 0 then
-                                currentItem.url = ('https://cdn.eltrane.cloud/alkiarp/outfits_greenscreener/%s/%s/%s/%s.webp'):format(sex[v.meta.sex], "props", imgType[v.meta.type], v.meta.id .. "_"..v.meta.var)
+                                currentItem.url = ('https://cdn.eltrane.cloud/3838384859/outfits_greenscreener/%s/%s/%s/%s.webp'):format(sex[v.meta.sex], "props", imgType[v.meta.type], v.meta.id .. "_"..v.meta.var)
                             else
-                                currentItem.url = ('https://cdn.eltrane.cloud/alkiarp/outfits_greenscreener/%s/%s/%s/%s.webp'):format(sex[v.meta.sex], "props", imgType[v.meta.type], v.meta.id)
+                                currentItem.url = ('https://cdn.eltrane.cloud/3838384859/outfits_greenscreener/%s/%s/%s/%s.webp'):format(sex[v.meta.sex], "props", imgType[v.meta.type], v.meta.id)
                             end
                         end
                     elseif (v.name == "top" or v.name == "outfit") then
                         if v.meta.skin["torso_2"] > 0 then
-                            currentItem.url = ('https://cdn.eltrane.cloud/alkiarp/outfits_greenscreener/%s/%s/%s/%s.webp'):format(sex[v.meta.sex], "clothing", imgType[v.name], v.meta.skin["torso_1"] .. "_"..v.meta.skin["torso_2"])
+                            currentItem.url = ('https://cdn.eltrane.cloud/3838384859/outfits_greenscreener/%s/%s/%s/%s.webp'):format(sex[v.meta.sex], "clothing", imgType[v.name], v.meta.skin["torso_1"] .. "_"..v.meta.skin["torso_2"])
                         else
-                            currentItem.url = ('https://cdn.eltrane.cloud/alkiarp/outfits_greenscreener/%s/%s/%s/%s.webp'):format(sex[v.meta.sex], "clothing", imgType[v.name], v.meta.skin["torso_1"])
+                            currentItem.url = ('https://cdn.eltrane.cloud/3838384859/outfits_greenscreener/%s/%s/%s/%s.webp'):format(sex[v.meta.sex], "clothing", imgType[v.name], v.meta.skin["torso_1"])
                         end
                     else
                         if v.meta.var > 0 then
-                            currentItem.url = ('https://cdn.eltrane.cloud/alkiarp/outfits_greenscreener/%s/%s/%s/%s.webp'):format(sex[v.meta.sex], "clothing", imgType[v.name], v.meta.id .. "_"..v.meta.var)
+                            currentItem.url = ('https://cdn.eltrane.cloud/3838384859/outfits_greenscreener/%s/%s/%s/%s.webp'):format(sex[v.meta.sex], "clothing", imgType[v.name], v.meta.id .. "_"..v.meta.var)
                         else
-                            currentItem.url = ('https://cdn.eltrane.cloud/alkiarp/outfits_greenscreener/%s/%s/%s/%s.webp'):format(sex[v.meta.sex], "clothing", imgType[v.name], v.meta.id)
+                            currentItem.url = ('https://cdn.eltrane.cloud/3838384859/outfits_greenscreener/%s/%s/%s/%s.webp'):format(sex[v.meta.sex], "clothing", imgType[v.name], v.meta.id)
                         end
                     end
                 end
@@ -208,28 +208,28 @@ function VFW.LoadInventory()
             if (v.name == "accessory") then
                 if (v.meta.type ~= "bracelet") and (v.meta.type ~= "earring") and (v.meta.type ~= "glasses") and (v.meta.type ~= "hat") and (v.meta.type ~= "watch") then
                     if (v.meta.var or 0) > 0 then
-                        inventoryData[i].url = ('https://cdn.eltrane.cloud/alkiarp/outfits_greenscreener/%s/%s/%s/%s.webp'):format(sex[v.meta.sex], "clothing", imgType[v.meta.type], v.meta.id .. "_"..v.meta.var)
+                        inventoryData[i].url = ('https://cdn.eltrane.cloud/3838384859/outfits_greenscreener/%s/%s/%s/%s.webp'):format(sex[v.meta.sex], "clothing", imgType[v.meta.type], v.meta.id .. "_"..v.meta.var)
                     else
-                        inventoryData[i].url = ('https://cdn.eltrane.cloud/alkiarp/outfits_greenscreener/%s/%s/%s/%s.webp'):format(sex[v.meta.sex], "clothing", imgType[v.meta.type], v.meta.id)
+                        inventoryData[i].url = ('https://cdn.eltrane.cloud/3838384859/outfits_greenscreener/%s/%s/%s/%s.webp'):format(sex[v.meta.sex], "clothing", imgType[v.meta.type], v.meta.id)
                     end
                 else
                     if (v.meta.var or 0) > 0 then
-                        inventoryData[i].url = ('https://cdn.eltrane.cloud/alkiarp/outfits_greenscreener/%s/%s/%s/%s.webp'):format(sex[v.meta.sex], "props", imgType[v.meta.type], v.meta.id .. "_"..v.meta.var)
+                        inventoryData[i].url = ('https://cdn.eltrane.cloud/3838384859/outfits_greenscreener/%s/%s/%s/%s.webp'):format(sex[v.meta.sex], "props", imgType[v.meta.type], v.meta.id .. "_"..v.meta.var)
                     else
-                        inventoryData[i].url = ('https://cdn.eltrane.cloud/alkiarp/outfits_greenscreener/%s/%s/%s/%s.webp'):format(sex[v.meta.sex], "props", imgType[v.meta.type], v.meta.id)
+                        inventoryData[i].url = ('https://cdn.eltrane.cloud/3838384859/outfits_greenscreener/%s/%s/%s/%s.webp'):format(sex[v.meta.sex], "props", imgType[v.meta.type], v.meta.id)
                     end
                 end
             elseif (v.name == "top" or v.name == "outfit") then
                 if v.meta.skin["torso_2"] > 0 then
-                    inventoryData[i].url = ('https://cdn.eltrane.cloud/alkiarp/outfits_greenscreener/%s/%s/%s/%s.webp'):format(sex[v.meta.sex], "clothing", imgType[v.name], v.meta.skin["torso_1"] .. "_"..v.meta.skin["torso_2"])
+                    inventoryData[i].url = ('https://cdn.eltrane.cloud/3838384859/outfits_greenscreener/%s/%s/%s/%s.webp'):format(sex[v.meta.sex], "clothing", imgType[v.name], v.meta.skin["torso_1"] .. "_"..v.meta.skin["torso_2"])
                 else
-                    inventoryData[i].url = ('https://cdn.eltrane.cloud/alkiarp/outfits_greenscreener/%s/%s/%s/%s.webp'):format(sex[v.meta.sex], "clothing", imgType[v.name], v.meta.skin["torso_1"])
+                    inventoryData[i].url = ('https://cdn.eltrane.cloud/3838384859/outfits_greenscreener/%s/%s/%s/%s.webp'):format(sex[v.meta.sex], "clothing", imgType[v.name], v.meta.skin["torso_1"])
                 end
             else
                 if (v.meta.var or 0) > 0 then
-                    inventoryData[i].url = ('https://cdn.eltrane.cloud/alkiarp/outfits_greenscreener/%s/%s/%s/%s.webp'):format(sex[v.meta.sex], "clothing", imgType[v.name], v.meta.id .. "_"..v.meta.var)
+                    inventoryData[i].url = ('https://cdn.eltrane.cloud/3838384859/outfits_greenscreener/%s/%s/%s/%s.webp'):format(sex[v.meta.sex], "clothing", imgType[v.name], v.meta.id .. "_"..v.meta.var)
                 else
-                    inventoryData[i].url = ('https://cdn.eltrane.cloud/alkiarp/outfits_greenscreener/%s/%s/%s/%s.webp'):format(sex[v.meta.sex], "clothing", imgType[v.name], v.meta.id)
+                    inventoryData[i].url = ('https://cdn.eltrane.cloud/3838384859/outfits_greenscreener/%s/%s/%s/%s.webp'):format(sex[v.meta.sex], "clothing", imgType[v.name], v.meta.id)
                 end
             end
         end

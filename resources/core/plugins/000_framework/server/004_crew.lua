@@ -706,7 +706,7 @@ function CreateCrew(name, label, type, devise, perms, xp, place, color, creator,
     self.vehicles = {}
     self.itemsMarket = items[type] or {}
     self.activities = {}
-    self.posCraft = (Kipstz and Kipstz.ilegal and Kipstz.ilegal.craft and Kipstz.ilegal.craft[self.type]) or vector3(0, 0, 0)
+    self.posCraft = (BLK and BLK.ilegal and BLK.ilegal.craft and BLK.ilegal.craft[self.type]) or vector3(0, 0, 0)
     self.propertiesLoaded = false
     self.sessions = {}
 
@@ -964,7 +964,7 @@ function CreateCrew(name, label, type, devise, perms, xp, place, color, creator,
 
     function self.setType(newType)
         self.type = newType
-        self.posCraft = Kipstz.ilegal.craft[self.type] or vector3(0, 0, 0)
+        self.posCraft = BLK.ilegal.craft[self.type] or vector3(0, 0, 0)
         self.itemsMarket = items[self.type] or {}
         self.setTypeToConnectMember(self.type)
         self.sendToConnectMember("crew:client:setType", self.type)
@@ -1407,7 +1407,7 @@ end)
 
 ---@param crewType 'gang'|'mc'|'orga'|'mafia'
 VFW.GetCraftPosByCrew = function(crewType)
-    return Kipstz.ilegal.craft[crewType] or nil
+    return BLK.ilegal.craft[crewType] or nil
 end
 
 VFW.GetAllCrews = function()

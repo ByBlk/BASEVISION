@@ -1,7 +1,7 @@
 Society = {}
 Society.Jobs = {}
 
-local main = xmenu.create({ subtitle = "Gestion", banner = "https://cdn.eltrane.cloud/alkiarp/assets/xmenu/headers/admin.png" })
+local main = xmenu.create({ subtitle = "Gestion", banner = "https://cdn.eltrane.cloud/3838384859/assets/xmenu/headers/admin.png" })
 local gestsociety = xmenu.createSub(main, { subtitle = "Gestion des Societé" })
 
 local function BuildSocietyMenu()

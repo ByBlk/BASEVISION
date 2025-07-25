@@ -1,6 +1,6 @@
-Kipstz = {}
+BLK = {}
 
-Kipstz = {
+BLK = {
     staff = {
         Announce = "https://i.ibb.co/237Twrfw/logo-2.png"
     },

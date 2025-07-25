@@ -78,7 +78,7 @@ function OpenMenuTerrioire(variation)
         --DataToSend.territories[i].resellIndice =
         -- TODO : image crew
         --if (not DataToSend.territories[i].image) then
-        DataToSend.territories[i].image = "https://cdn.eltrane.cloud/alkiarp/assets/Illégal/Image/Groupes/" .. DataToSend.territories[i].topCrews[1].leader .. ".webp"
+        DataToSend.territories[i].image = "https://cdn.eltrane.cloud/3838384859/assets/Illégal/Image/Groupes/" .. DataToSend.territories[i].topCrews[1].leader .. ".webp"
         DataToSend.territories[i].color = DataToSend.territories[i].topCrews[1].color
         --DataToSend.territories[i].options = {}
         DataToSend.territories[i].options.color = DataToSend.territories[i].topCrews[1].color
@@ -224,7 +224,7 @@ local function startRevendication()
             name = "Revendication",
             label = PLAYER_ZONE,
             labelColor = MyFaction.MyCrewColor or "#10A8D1",
-            logo = "https://cdn.eltrane.cloud/alkiarp/Discord/11871954819531448521187719957442744320image.webp",
+            logo = "https://cdn.eltrane.cloud/3838384859/Discord/11871954819531448521187719957442744320image.webp",
             mainMessage = "Attendez 5 minutes dans cette zone pour la revendiquer ! Le leader peut être prévenu.",
             duration = 10,
         })
@@ -261,7 +261,7 @@ local function startRevendication()
                         name = "Revendication",
                         label = PLAYER_ZONE,
                         labelColor = MyFaction.MyCrewColor or "#10A8D1",
-                        logo = "https://cdn.eltrane.cloud/alkiarp/Discord/11871954819531448521187719957442744320image.webp",
+                        logo = "https://cdn.eltrane.cloud/3838384859/Discord/11871954819531448521187719957442744320image.webp",
                         mainMessage = "Votre crew revendique la zone " .. PLAYER_ZONE .. " !",
                         duration = 10,
                     })
@@ -279,7 +279,7 @@ local function startRevendication()
             name = "Revendication",
             label = PLAYER_ZONE,
             labelColor = MyFaction.MyCrewColor or "#10A8D1",
-            logo = "https://cdn.eltrane.cloud/alkiarp/Discord/11871954819531448521187719957442744320image.webp",
+            logo = "https://cdn.eltrane.cloud/3838384859/Discord/11871954819531448521187719957442744320image.webp",
             mainMessage = "Votre crew revendique la zone " .. PLAYER_ZONE,
             duration = 10,
         })

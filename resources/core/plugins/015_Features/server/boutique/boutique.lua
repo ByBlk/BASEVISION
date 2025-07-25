@@ -285,7 +285,7 @@ function BuyVehicleBoutique(player2, vehicle, liveries, typeachcat, perf, colors
 			end
         else
             --[[TriggerClientEvent('core:ShowNotification', player, "~r~Erreur lors de l'achat du v�hicule")]]
-            TriggerClientEvent("__kpz::createNotification", player, {
+            TriggerClientEvent("__blk::createNotification", player, {
                 type = 'ROUGE',
                 -- duration = 5, -- In seconds, default:  4
                 content = "~s Erreur lors de l'achat du v�hicule"
@@ -302,7 +302,7 @@ RegisterNetEvent("core:boutiquevehicule:buyCar", function(name, price, performan
     if price == 0 then return end
     if getVCoins >= price then
         RemoveCoins(src, price)
-        TriggerClientEvent("__kpz::createNotification", src, {
+        TriggerClientEvent("__blk::createNotification", src, {
             type = 'VERT',
             content = "Vous avez achet� " .. name .. " pour " .. price .. " Coins , votre v�hicule est disponible dans votre garage"
         })
@@ -325,7 +325,7 @@ RegisterNetEvent("core:boutique:buyCar", function(id, veh, liveri)
     local src = source 
     if GetPlayer(src):getPermission() >= 3 then
         BuyVehicleBoutique(id, veh, liveri, "boutique")
-        TriggerClientEvent("__kpz::createNotification", src, {
+        TriggerClientEvent("__blk::createNotification", src, {
             type = 'VERT',
             content = "~s V�hicule give avec succ�s"
         })
@@ -353,7 +353,7 @@ RegisterNetEvent("core:nojob:buyCar", function(veh, job)
                     end
                     BuyVehicleBoutique(src, veh.name, 0, job)
                 else
-                    TriggerClientEvent("__kpz::createNotification", src, {
+                    TriggerClientEvent("__blk::createNotification", src, {
                         type = 'ROUGE',
                         -- duration = 5, -- In seconds, default:  4
                         content = "~s Vous n'avez pas assez d'argent en banque"
@@ -395,7 +395,7 @@ RegisterNetEvent("core:premium:buyCar", function(veh, endroit)
                             BuyVehicleBoutique(src, veh.name, 0, "heliwave")
                         end
                     else
-                        TriggerClientEvent("__kpz::createNotification", src, {
+                        TriggerClientEvent("__blk::createNotification", src, {
                             type = 'ROUGE',
                             -- duration = 5, -- In seconds, default:  4
                             content = "~s Vous n'avez pas assez d'argent en banque"
@@ -420,7 +420,7 @@ RegisterNetEvent("core:premium:buyCar", function(veh, endroit)
             end
         end
     else
-        TriggerClientEvent("__kpz::createNotification", src, {
+        TriggerClientEvent("__blk::createNotification", src, {
             type = 'ROUGE',
             content = "~s Vous devez avoir l'abonnement premium pour pouvoir acheter ce v�hicule"
         })

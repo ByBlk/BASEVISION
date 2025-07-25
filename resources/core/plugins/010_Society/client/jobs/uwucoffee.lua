@@ -2,32 +2,32 @@ while not ConfigManager do Wait(100) end
 while not ConfigManager.Config.society do Wait(100) end
 if not ConfigManager.Config.society["uwucoffee"] then return end
 Society.newJob("uwucoffee", {
-    Blips = Kipstz.Jobs.UwUCoffee.Blips,
+    Blips = BLK.Jobs.UwUCoffee.Blips,
     Radial = {
         main = {
             {
                 name = "ANNONCE",
-                icon = "https://cdn.eltrane.cloud/alkiarp/assets/radialmenus/megaphone.svg",
+                icon = "https://cdn.eltrane.cloud/3838384859/assets/radialmenus/megaphone.svg",
                 action = "CreateJobAdvert"
             },
             {
                 name = "FACTURE",
-                icon = "https://cdn.eltrane.cloud/alkiarp/assets/radialmenus/billet.svg",
+                icon = "https://cdn.eltrane.cloud/3838384859/assets/radialmenus/billet.svg",
                 action = "OpenInvoice"
             },
             {
                 name = "PRISE DE SERVICE",
-                icon = "https://cdn.eltrane.cloud/alkiarp/assets/radialmenus/checkmark.svg",
+                icon = "https://cdn.eltrane.cloud/3838384859/assets/radialmenus/checkmark.svg",
                 action = "SetJobDuty"
             }
         }
     },
-    Sonnette = Kipstz.Jobs.UwUCoffee.Sonnette,
-    Gestion = Kipstz.Jobs.UwUCoffee.Gestion,
-    Stockage = Kipstz.Jobs.UwUCoffee.Stockage,
-    Casier = Kipstz.Jobs.UwUCoffee.Casier,
+    Sonnette = BLK.Jobs.UwUCoffee.Sonnette,
+    Gestion = BLK.Jobs.UwUCoffee.Gestion,
+    Stockage = BLK.Jobs.UwUCoffee.Stockage,
+    Casier = BLK.Jobs.UwUCoffee.Casier,
     Catalogue = {
-        Position = Kipstz.Jobs.UwUCoffee.Catalogue,
+        Position = BLK.Jobs.UwUCoffee.Catalogue,
         Items = {
             { model = 'barbamilk' },
             --{ model = 'BubbleTea' },
@@ -49,10 +49,10 @@ Society.newJob("uwucoffee", {
             { model = 'kitty' }
         }
     },
-    Vetement = Kipstz.Jobs.UwUCoffee.Vetement,
-    Garage = Kipstz.Jobs.UwUCoffee.Garage,
+    Vetement = BLK.Jobs.UwUCoffee.Vetement,
+    Garage = BLK.Jobs.UwUCoffee.Garage,
     Craft = {
-        Position = Kipstz.Jobs.UwUCoffee.Craft,
+        Position = BLK.Jobs.UwUCoffee.Craft,
         Items = {
             { name = "barbamilk", label = "Barba Milk", timer = 10, recipe = {
                 { name = "milk", label = "Lait", amount = 1 },

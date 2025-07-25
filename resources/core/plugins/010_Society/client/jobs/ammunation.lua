@@ -19,7 +19,7 @@ function GetWeaponStats(weaponHash, none)
     return {hudDamage, hudSpeed, hudAccuracy, hudRange, hudCapacity}
 end
 
-for _, weapon in ipairs(Kipstz.Shop.Ammunations.items) do
+for _, weapon in ipairs(BLK.Shop.Ammunations.items) do
     local tempCatalogue = {}
     if string.find(weapon.model, "weapon") then
         tempCatalogue = {
@@ -88,8 +88,8 @@ RegisterNUICallback("nui:newgrandcatalogue:ammu:close", function()
     VFW.Nui.NewGrandMenu(false)
 end)
 
-for k, v in pairs(Kipstz.Shop.Ammunations.Position) do
-    VFW.CreateBlipAndPoint("ammu", v, k, Kipstz.Shop.Ammunations.Blips.Sprite, Kipstz.Shop.Ammunations.Blips.Color, Kipstz.Shop.Ammunations.Blips.Scale, Kipstz.Shop.Ammunations.Blips.Name, "AmmuNation", "E", "Ammunation",{
+for k, v in pairs(BLK.Shop.Ammunations.Position) do
+    VFW.CreateBlipAndPoint("ammu", v, k, BLK.Shop.Ammunations.Blips.Sprite, BLK.Shop.Ammunations.Blips.Color, BLK.Shop.Ammunations.Blips.Scale, BLK.Shop.Ammunations.Blips.Name, "AmmuNation", "E", "Ammunation",{
         onPress = function()
             VFW.Nui.NewGrandMenu(true, MenuConfig())
         end

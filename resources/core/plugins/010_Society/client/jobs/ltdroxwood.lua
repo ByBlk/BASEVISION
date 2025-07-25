@@ -2,32 +2,32 @@ while not ConfigManager do Wait(100) end
 while not ConfigManager.Config.society do Wait(100) end
 if not ConfigManager.Config.society["ltdroxwood"] then return end
 Society.newJob("ltdroxwood", {
-    Blips = Kipstz.Jobs.LTDRoxWood.Blips,
+    Blips = BLK.Jobs.LTDRoxWood.Blips,
     Radial = {
         main = {
             {
                 name = "ANNONCE",
-                icon = "https://cdn.eltrane.cloud/alkiarp/assets/radialmenus/megaphone.svg",
+                icon = "https://cdn.eltrane.cloud/3838384859/assets/radialmenus/megaphone.svg",
                 action = "CreateJobAdvert"
             },
             {
                 name = "FACTURE",
-                icon = "https://cdn.eltrane.cloud/alkiarp/assets/radialmenus/billet.svg",
+                icon = "https://cdn.eltrane.cloud/3838384859/assets/radialmenus/billet.svg",
                 action = "OpenInvoice"
             },
             {
                 name = "PRISE DE SERVICE",
-                icon = "https://cdn.eltrane.cloud/alkiarp/assets/radialmenus/checkmark.svg",
+                icon = "https://cdn.eltrane.cloud/3838384859/assets/radialmenus/checkmark.svg",
                 action = "SetJobDuty"
             }
         }
     },
-    Sonnette = Kipstz.Jobs.LTDRoxWood.Sonnette,
-    Gestion = Kipstz.Jobs.LTDRoxWood.Gestion,
-    Stockage = Kipstz.Jobs.LTDRoxWood.Stockage,
-    Casier = Kipstz.Jobs.LTDRoxWood.Casier,
+    Sonnette = BLK.Jobs.LTDRoxWood.Sonnette,
+    Gestion = BLK.Jobs.LTDRoxWood.Gestion,
+    Stockage = BLK.Jobs.LTDRoxWood.Stockage,
+    Casier = BLK.Jobs.LTDRoxWood.Casier,
     Catalogue = {
-        Position = Kipstz.Jobs.LTDRoxWood.Catalogue,
+        Position = BLK.Jobs.LTDRoxWood.Catalogue,
         Items = {
             { model = "triangle" },
             { model = "lollipop" },
@@ -48,9 +48,9 @@ Society.newJob("ltdroxwood", {
             { model = "can" },
         }
     },
-    Vetement = Kipstz.Jobs.LTDRoxWood.Vetement,
+    Vetement = BLK.Jobs.LTDRoxWood.Vetement,
     Craft = {
-        Position = Kipstz.Jobs.LTDRoxWood.Craft,
+        Position = BLK.Jobs.LTDRoxWood.Craft,
         Items = {
             { name = "triangle", label = "Sandwich Triangle", timer = 10, recipe = {
                 { name = "paindemie", label = "pain de mie", amount = 1 },

@@ -2,27 +2,27 @@ while not ConfigManager do Wait(100) end
 while not ConfigManager.Config.society do Wait(100) end
 if not ConfigManager.Config.society["getaweigh"] then return end
 Society.newJob("getaweigh", {
-    Blips = Kipstz.Jobs.GetAweigh.Blips,
+    Blips = BLK.Jobs.GetAweigh.Blips,
     Radial = {
         main = {
             {
                 name = "ANNONCE",
-                icon = "https://cdn.eltrane.cloud/alkiarp/assets/radialmenus/megaphone.svg",
+                icon = "https://cdn.eltrane.cloud/3838384859/assets/radialmenus/megaphone.svg",
                 action = "CreateJobAdvert",
             },
             {
                 name = "FACTURE",
-                icon = "https://cdn.eltrane.cloud/alkiarp/assets/radialmenus/billet.svg",
+                icon = "https://cdn.eltrane.cloud/3838384859/assets/radialmenus/billet.svg",
                 action = "OpenInvoice"
             },
             {
                 name = "PRISE DE SERVICE",
-                icon = "https://cdn.eltrane.cloud/alkiarp/assets/radialmenus/checkmark.svg",
+                icon = "https://cdn.eltrane.cloud/3838384859/assets/radialmenus/checkmark.svg",
                 action = "SetJobDuty",
             },
             {
                 name = "REPARER",
-                icon = "https://cdn.eltrane.cloud/alkiarp/assets/radialmenus/repair.svg",
+                icon = "https://cdn.eltrane.cloud/3838384859/assets/radialmenus/repair.svg",
                 action = "OpenSubRadialJobs",
                 args = "repair"
             },
@@ -30,33 +30,33 @@ Society.newJob("getaweigh", {
         repair = {
             {
                 name = "NETTOYAGE",
-                icon = "https://cdn.eltrane.cloud/alkiarp/assets/radialmenus/sponge.svg",
+                icon = "https://cdn.eltrane.cloud/3838384859/assets/radialmenus/sponge.svg",
                 action = "CleanVehicle",
             },
             {
                 name = "CARROSSERIE",
-                icon = "https://cdn.eltrane.cloud/alkiarp/assets/radialmenus/car.svg",
+                icon = "https://cdn.eltrane.cloud/3838384859/assets/radialmenus/car.svg",
                 action = "RepairCarroserieVehicle"
             },
             {
                 name = "RETOUR",
-                icon = "https://cdn.eltrane.cloud/alkiarp/assets/radialmenus/leave.svg",
+                icon = "https://cdn.eltrane.cloud/3838384859/assets/radialmenus/leave.svg",
                 action = "OpenSubRadialJobs",
                 args = "main"
             },
             {
                 name = "MOTEUR",
-                icon = "https://cdn.eltrane.cloud/alkiarp/assets/radialmenus/engine.svg",
+                icon = "https://cdn.eltrane.cloud/3838384859/assets/radialmenus/engine.svg",
                 action = "RepairVehicle"
             }
         },
     },
-    Sonnette = Kipstz.Jobs.GetAweigh.Sonnette,
-    Gestion = Kipstz.Jobs.GetAweigh.Gestion,
-    Stockage = Kipstz.Jobs.GetAweigh.Stockage,
-    Casier = Kipstz.Jobs.GetAweigh.Casier,
+    Sonnette = BLK.Jobs.GetAweigh.Sonnette,
+    Gestion = BLK.Jobs.GetAweigh.Gestion,
+    Stockage = BLK.Jobs.GetAweigh.Stockage,
+    Casier = BLK.Jobs.GetAweigh.Casier,
     Catalogue = {
-        Position = Kipstz.Jobs.GetAweigh.Catalogue,
+        Position = BLK.Jobs.GetAweigh.Catalogue,
         Items = {
             { model = "repairkit" },
             { model = "cleankit" },
@@ -66,9 +66,9 @@ Society.newJob("getaweigh", {
             { model = "gadget_parachute" },
         }
     },
-    Vetement = Kipstz.Jobs.GetAweigh.Vetement,
+    Vetement = BLK.Jobs.GetAweigh.Vetement,
     Craft = {
-        Position = Kipstz.Jobs.GetAweigh.Craft,
+        Position = BLK.Jobs.GetAweigh.Craft,
         Items = {
             { name = "repairkit", label = "Kit de réparation", timer = 10, recipe = {
                 { name = "coffretoutils", label = "Coffret à Outils", amount = 1 },

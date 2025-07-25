@@ -41,7 +41,7 @@ local lastOnglet = nil
 
 local function LoadFaceFeatures()
     local playerPed = PlayerPedId()
-    local baseURL = "https://cdn.eltrane.cloud/alkiarp/"
+    local baseURL = "https://cdn.eltrane.cloud/3838384859/"
     local playerType = temporaryDatas.playerType
 
     local function AddToCatalogue(id, labelPrefix, imgPath, category)
@@ -57,7 +57,7 @@ local function LoadFaceFeatures()
         creaPersoData.catalogue[#creaPersoData.catalogue + 1] = {
             id = id,
             label = "Aucun",
-            img = "https://cdn.eltrane.cloud/alkiarp/assets/creation-personnage/croix-resize.png",
+            img = "https://cdn.eltrane.cloud/3838384859/assets/creation-personnage/croix-resize.png",
             category = category,
         }
     end
@@ -177,7 +177,7 @@ local function LoadPedsFeatures()
 end
 
 local function LoadButtonsCreaPerso()
-    local baseURL = 'https://cdn.eltrane.cloud/alkiarp/assets/catalogues/binco/'
+    local baseURL = 'https://cdn.eltrane.cloud/3838384859/assets/catalogues/binco/'
     local defaultType = temporaryDatas.playerType
 
     local function CreateButton(name, width, imagePath, price, progressBar)
@@ -199,7 +199,7 @@ local function LoadButtonsCreaPerso()
         Chapeaux = baseURL .. defaultType .. '/hat.webp',
         Lunettes = baseURL .. defaultType .. '/glasses.webp',
         Sacs = baseURL .. defaultType .. '/bag.webp',
-        Cou = 'https://cdn.eltrane.cloud/alkiarp/old_a_trier/Discord/4985290747179171951144393442533838939image.webp'
+        Cou = 'https://cdn.eltrane.cloud/3838384859/old_a_trier/Discord/4985290747179171951144393442533838939image.webp'
     }
 
     local progressBars = {
@@ -265,26 +265,26 @@ local function LoadClothesForCreator(baseURL)
 
     ProcessClothing(6, bans.BanShoes, "Chaussures", "Chaussures", "shoes")
 
-    AddToCatalogue(15, "Aucun", "https://cdn.eltrane.cloud/alkiarp/assets/creation-personnage/croix-resize.png", "Hauts", "Hauts", 15)
+    AddToCatalogue(15, "Aucun", "https://cdn.eltrane.cloud/3838384859/assets/creation-personnage/croix-resize.png", "Hauts", "Hauts", 15)
     ProcessClothing(11, bans.BanTop, "Hauts", "Hauts", "torso2")
 
     local defaultId = temporaryDatas.playerType == "Homme" and 0 or 17
-    AddToCatalogue(defaultId, "Aucun", "https://cdn.eltrane.cloud/alkiarp/assets/creation-personnage/croix-resize.png", "Hauts", "Sous-haut", defaultId)
+    AddToCatalogue(defaultId, "Aucun", "https://cdn.eltrane.cloud/3838384859/assets/creation-personnage/croix-resize.png", "Hauts", "Sous-haut", defaultId)
     ProcessClothing(8, bans.BanSous, "Hauts", "Sous-haut", "undershirt")
 
     ProcessClothing(3, bans.BanArm, "Hauts", "Bras", "arms")
 
-    AddToCatalogue(-1, "Aucun", "https://cdn.eltrane.cloud/alkiarp/assets/creation-personnage/croix-resize.png", "Chapeaux", "Chapeaux", -1)
+    AddToCatalogue(-1, "Aucun", "https://cdn.eltrane.cloud/3838384859/assets/creation-personnage/croix-resize.png", "Chapeaux", "Chapeaux", -1)
     ProcessProps(0, bans.BanHat, "Chapeaux", "hat")
 
     local glassesDefaultId = temporaryDatas.playerType == "Homme" and 0 or -1
-    AddToCatalogue(glassesDefaultId, "Aucun", "https://cdn.eltrane.cloud/alkiarp/assets/creation-personnage/croix-resize.png", "Lunettes", "Lunettes", glassesDefaultId)
+    AddToCatalogue(glassesDefaultId, "Aucun", "https://cdn.eltrane.cloud/3838384859/assets/creation-personnage/croix-resize.png", "Lunettes", "Lunettes", glassesDefaultId)
     ProcessProps(1, bans.BanGlases, "Lunettes", "glasses")
 
-    AddToCatalogue(0, "Aucun", "https://cdn.eltrane.cloud/alkiarp/assets/creation-personnage/croix-resize.png", "Sacs", "Sacs", 0)
+    AddToCatalogue(0, "Aucun", "https://cdn.eltrane.cloud/3838384859/assets/creation-personnage/croix-resize.png", "Sacs", "Sacs", 0)
     ProcessClothing(5, bans.BanBag, "Sacs", "Sacs", "bag")
 
-    AddToCatalogue(0, "Aucun", "https://cdn.eltrane.cloud/alkiarp/assets/creation-personnage/croix-resize.png", "Cou", "Cou", 0)
+    AddToCatalogue(0, "Aucun", "https://cdn.eltrane.cloud/3838384859/assets/creation-personnage/croix-resize.png", "Cou", "Cou", 0)
     ProcessClothing(7, bans.BanCou, "Cou", "Cou", "accessory")
 end
 
@@ -303,20 +303,20 @@ local function LoadDataForCreator(sex)
 
     console.debug(sex, temporaryDatas.playerType)
 
-    local baseURL = "https://cdn.eltrane.cloud/alkiarp/outfits_greenscreener/" .. temporaryDatas.playerSex
+    local baseURL = "https://cdn.eltrane.cloud/3838384859/outfits_greenscreener/" .. temporaryDatas.playerSex
 
     creaPersoData.hideItemList = {'Bras','Variations 3'}
 
     if temporaryDatas.playerType == "Homme" then
-        creaPersoData.catalogue[#creaPersoData.catalogue + 1] = {id = 61, label="Aucun", image="https://cdn.eltrane.cloud/alkiarp/assets/creation-personnage/croix-resize.png", category="Bas", subCategory="Bas", idVariation=61}
+        creaPersoData.catalogue[#creaPersoData.catalogue + 1] = {id = 61, label="Aucun", image="https://cdn.eltrane.cloud/3838384859/assets/creation-personnage/croix-resize.png", category="Bas", subCategory="Bas", idVariation=61}
     else
-        creaPersoData.catalogue[#creaPersoData.catalogue + 1] = {id = 17, label="Aucun", image="https://cdn.eltrane.cloud/alkiarp/assets/creation-personnage/croix-resize.png", category="Bas", subCategory="Bas", idVariation=17}
+        creaPersoData.catalogue[#creaPersoData.catalogue + 1] = {id = 17, label="Aucun", image="https://cdn.eltrane.cloud/3838384859/assets/creation-personnage/croix-resize.png", category="Bas", subCategory="Bas", idVariation=17}
     end
 
     if temporaryDatas.playerType == "Homme" then
-        creaPersoData.catalogue[#creaPersoData.catalogue + 1] = {id = 34, label="Aucun", image="https://cdn.eltrane.cloud/alkiarp/assets/creation-personnage/croix-resize.png", category="Chaussures", subCategory="Chaussures", idVariation=34}
+        creaPersoData.catalogue[#creaPersoData.catalogue + 1] = {id = 34, label="Aucun", image="https://cdn.eltrane.cloud/3838384859/assets/creation-personnage/croix-resize.png", category="Chaussures", subCategory="Chaussures", idVariation=34}
     else
-        creaPersoData.catalogue[#creaPersoData.catalogue + 1] = {id = 35, label="Aucun", image="https://cdn.eltrane.cloud/alkiarp/assets/creation-personnage/croix-resize.png", category="Chaussures", subCategory="Chaussures", idVariation=35}
+        creaPersoData.catalogue[#creaPersoData.catalogue + 1] = {id = 35, label="Aucun", image="https://cdn.eltrane.cloud/3838384859/assets/creation-personnage/croix-resize.png", category="Chaussures", subCategory="Chaussures", idVariation=35}
     end
 
     LoadFaceFeatures()

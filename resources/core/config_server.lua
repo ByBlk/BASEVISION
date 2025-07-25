@@ -1,6 +1,6 @@
-Kipstz = Kipstz or {}
+BLK = BLK or {}
 
-Kipstz.Logs = {
+BLK.Logs = {
     general = {
         connect = "https://discord.com/api/webhooks/1382786637456478228/UTp0_nzzyIhtkB3O2w_xHRkyBPHCQ0hwhxM8KOXJl9EYhaefgasM4xw7R0ODnMySbHvI",
         disconnect = "https://discord.com/api/webhooks/1382786694821970031/O6AVqRvIeaHnQA7O2Ao3XqA_Hbv5j4nTtMP0kkcW91YXMhUkbGNNtEv_f7kkjFzTFHr7",

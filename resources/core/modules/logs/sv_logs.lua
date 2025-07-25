@@ -1,7 +1,7 @@
 logs = {}
 
 
-logs.config = Kipstz.Logs
+logs.config = BLK.Logs
 
 local defaultUsername = "L'observateur"
 local defaultAvatar = "https://cdnalkia.eltrane.cloud/assets/icons/ObserverStaring.webp"
@@ -21,7 +21,7 @@ function sendToDiscord(webhook, title, embedData, color)
                      description = embedData or "Aucune information",
                      color = color or 16777215,
                      footer = {
-                         text = os.date("%d/%m/%Y à %H:%M:%S by Kipstz")
+                         text = os.date("%d/%m/%Y à %H:%M:%S by BLK")
                      }
                  }}
     end

@@ -777,7 +777,7 @@ RegisterNetEvent("core:labo:sendnotif", function(crew, msg, id)
             name = "Lester",
             label = "Laboratoire",
             labelColor = ColorsLab[labotype],
-            logo = "https://cdn.eltrane.cloud/alkiarp/Discord/11871954819531448521187719957442744320image.webp",
+            logo = "https://cdn.eltrane.cloud/3838384859/Discord/11871954819531448521187719957442744320image.webp",
             mainMessage = msg,
             duration = 10,
         })

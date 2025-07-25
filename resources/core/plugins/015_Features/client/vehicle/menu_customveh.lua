@@ -1,6 +1,6 @@
 local lastZone, lastBlip, open = {}, {}, false
 local lastVehicle = nil
-local points = Kipstz.CustomVehiculePoints or {}
+local points = BLK.CustomVehiculePoints or {}
 
 local xmenu = _G.xmenu
 if not xmenu and VFW and VFW.xMenu then
@@ -8,8 +8,8 @@ if not xmenu and VFW and VFW.xMenu then
 end
 
 
-local paintCategories = Kipstz.paintCategories
-local gtaColors = Kipstz.gtaColors
+local paintCategories = BLK.paintCategories
+local gtaColors = BLK.gtaColors
 
 local wheelCategories = {
     {name = "Sport", id = 0},
@@ -41,7 +41,7 @@ local windowTints = {
 }
 local extrasMax = 20
 
-local prices = Kipstz.customVehiclePrices
+local prices = BLK.customVehiclePrices
 
 local function getModLabel(modType, i)
     if modType == 23 then return "Type "..i end
@@ -256,7 +256,7 @@ local function OpenCustomVehMenu(veh)
     initialState = getVehicleState(lastVehicle)
     validatedState = getVehicleState(lastVehicle)
 
-    local main = xmenu.create({ subtitle = "MENU CUSTOM", banner = "https://cdn.eltrane.cloud/alkiarp/assets/xmenu/headers/admin.png" })
+    local main = xmenu.create({ subtitle = "MENU CUSTOM", banner = "https://cdn.eltrane.cloud/3838384859/assets/xmenu/headers/admin.png" })
 
     local perfMenu = xmenu.createSub(main, { subtitle = "Performance" })
     local partsMenu = xmenu.createSub(main, { subtitle = "Pièces" })

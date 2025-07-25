@@ -45,7 +45,7 @@ CreateThread(function()
         })
     end
 
-    for k, v in pairs(Kipstz.Shop.Location.Position) do
+    for k, v in pairs(BLK.Shop.Location.Position) do
         VFW.CreateBlipAndPoint("location", vector3(v.Ped.x, v.Ped.y, v.Ped.z + 1.25), k, 466, 3, 0.8, "Location de véhicules",  "Location", "E", "Location",{
             onPress = function()
                 LoadLocation(v)
@@ -89,7 +89,7 @@ CreateThread(function()
         end
     end
 
-    for k, v in pairs(Kipstz.Public.Garage) do
+    for k, v in pairs(BLK.Public.Garage) do
         VFW.CreateBlipAndPoint("garage", v.Public, k, 524, 32, 0.8, "Garage", "Garage", "E", "Garage",{
             onPress = function()
                 local vehicle = GetVehiclePedIsIn(VFW.PlayerData.ped, false)
@@ -120,7 +120,7 @@ CreateThread(function()
         })
     end
 
-    for k, v in pairs(Kipstz.Public.Fourriere) do
+    for k, v in pairs(BLK.Public.Fourriere) do
         VFW.CreateBlipAndPoint("pound", v.Public, k, 68, 47, 0.8, "Fourriere", "Fourriere", "E", "Fourriere",{
             onPress = function()
                 VFW.OpenPound(v)

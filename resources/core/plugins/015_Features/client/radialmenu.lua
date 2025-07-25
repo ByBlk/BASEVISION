@@ -12,17 +12,17 @@ local function OpenRadialF9()
     local ELEMENTS <const> = {
         {
             name = "MODE CINEMA",
-            icon = "https://cdn.eltrane.cloud/alkiarp/assets/radialmenus/cinema.svg",
+            icon = "https://cdn.eltrane.cloud/3838384859/assets/radialmenus/cinema.svg",
             action = "CinemaMod"
         },
         {
             name = "MASQUER HUD",
-            icon = "https://cdn.eltrane.cloud/alkiarp/assets/radialmenus/crossed_eye.svg",
+            icon = "https://cdn.eltrane.cloud/3838384859/assets/radialmenus/crossed_eye.svg",
             action = "NoMoreATH"
         },
         {
             name = "REINITIALISER",
-            icon = "https://cdn.eltrane.cloud/alkiarp/assets/radialmenus/back.svg",
+            icon = "https://cdn.eltrane.cloud/3838384859/assets/radialmenus/back.svg",
             action = "DefaultCamera"
         },
     }

@@ -9,22 +9,22 @@ VFW.Territories.Cache = {
 }
 
 NotifImageIA = { -- Will be used in multiple files
-    {name = "Howard", lien = "https://cdn.eltrane.cloud/alkiarp/Discord/11871954819531448521187719711790727268image.webp"},
-    {name = "Shawn", lien = "https://cdn.eltrane.cloud/alkiarp/Discord/11871954819531448521187719763242254376image.webp"},
-    {name = "Denise", lien = "https://cdn.eltrane.cloud/alkiarp/Discord/11871954819531448521187719811581628517image.webp"},
-    {name = "Miguel", lien = "https://cdn.eltrane.cloud/alkiarp/Discord/11871954819531448521187719857416962099image.webp"},
-    {name = "Allison", lien = "https://cdn.eltrane.cloud/alkiarp/Discord/11871954819531448521187719913427714168image.webp"},
-    {name = "Jerry", lien = "https://cdn.eltrane.cloud/alkiarp/Discord/11871954819531448521187720076607098911image.webp"},
-    {name = "Lester", lien = "https://cdn.eltrane.cloud/alkiarp/Discord/11871954819531448521187719957442744320image.webp"},
-    --{name = "Bruce", lien = "https://cdn.eltrane.cloud/alkiarp/Discord/11871954819531448521187720455784763454image.webp"},
-    {name = "Emma", lien = "https://cdn.eltrane.cloud/alkiarp/Discord/11871954819531448521187720160707084380image.webp"},
-    {name = "Bonnie", lien = "https://cdn.eltrane.cloud/alkiarp/Discord/11871954819531448521187720276474073248image.webp"},
-    {name = "Kenji", lien = "https://cdn.eltrane.cloud/alkiarp/Discord/11871954819531448521187720365225545800image.webp"},
-    {name = "Franck", lien = "https://cdn.eltrane.cloud/alkiarp/Discord/11871954819531448521187720396473126943image.webp"},
-    {name = "Andrew", lien = "https://cdn.eltrane.cloud/alkiarp/Discord/11871954819531448521187720455784763454image.webp"},
-    {name = "Ricky", lien = "https://cdn.eltrane.cloud/alkiarp/Discord/11871954819531448521187720545312198726image.webp"},
-    {name = "Jimmy", lien = "https://cdn.eltrane.cloud/alkiarp/Discord/11871954819531448521187720600668610681image.webp"},
-    {name = "Crystal", lien = "https://cdn.eltrane.cloud/alkiarp/Discord/11871954819531448521187720700258164756image.webp"},
+    {name = "Howard", lien = "https://cdn.eltrane.cloud/3838384859/Discord/11871954819531448521187719711790727268image.webp"},
+    {name = "Shawn", lien = "https://cdn.eltrane.cloud/3838384859/Discord/11871954819531448521187719763242254376image.webp"},
+    {name = "Denise", lien = "https://cdn.eltrane.cloud/3838384859/Discord/11871954819531448521187719811581628517image.webp"},
+    {name = "Miguel", lien = "https://cdn.eltrane.cloud/3838384859/Discord/11871954819531448521187719857416962099image.webp"},
+    {name = "Allison", lien = "https://cdn.eltrane.cloud/3838384859/Discord/11871954819531448521187719913427714168image.webp"},
+    {name = "Jerry", lien = "https://cdn.eltrane.cloud/3838384859/Discord/11871954819531448521187720076607098911image.webp"},
+    {name = "Lester", lien = "https://cdn.eltrane.cloud/3838384859/Discord/11871954819531448521187719957442744320image.webp"},
+    --{name = "Bruce", lien = "https://cdn.eltrane.cloud/3838384859/Discord/11871954819531448521187720455784763454image.webp"},
+    {name = "Emma", lien = "https://cdn.eltrane.cloud/3838384859/Discord/11871954819531448521187720160707084380image.webp"},
+    {name = "Bonnie", lien = "https://cdn.eltrane.cloud/3838384859/Discord/11871954819531448521187720276474073248image.webp"},
+    {name = "Kenji", lien = "https://cdn.eltrane.cloud/3838384859/Discord/11871954819531448521187720365225545800image.webp"},
+    {name = "Franck", lien = "https://cdn.eltrane.cloud/3838384859/Discord/11871954819531448521187720396473126943image.webp"},
+    {name = "Andrew", lien = "https://cdn.eltrane.cloud/3838384859/Discord/11871954819531448521187720455784763454image.webp"},
+    {name = "Ricky", lien = "https://cdn.eltrane.cloud/3838384859/Discord/11871954819531448521187720545312198726image.webp"},
+    {name = "Jimmy", lien = "https://cdn.eltrane.cloud/3838384859/Discord/11871954819531448521187720600668610681image.webp"},
+    {name = "Crystal", lien = "https://cdn.eltrane.cloud/3838384859/Discord/11871954819531448521187720700258164756image.webp"},
 }
 
 local function InsertTerritoireInTable(name, zone)

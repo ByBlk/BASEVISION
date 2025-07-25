@@ -151,11 +151,11 @@ function OpenMenuTraiInter()
     Wait(50)
 
     VFW.Nui.JobMenu(true, {
-        headerBanner = "https://cdn.eltrane.cloud/alkiarp/assets/jobmenu/train_header.webp",
+        headerBanner = "https://cdn.eltrane.cloud/3838384859/assets/jobmenu/train_header.webp",
         choice = {
             label = "Trains",
             isOptional = false,
-            choices = {{id = 1, label = 'Train de fret', name = 'train', img= "https://cdn.eltrane.cloud/alkiarp/assets/jobmenu/train_vehicle.webp"}},
+            choices = {{id = 1, label = 'Train de fret', name = 'train', img= "https://cdn.eltrane.cloud/3838384859/assets/jobmenu/train_vehicle.webp"}},
         },
         participants = PlayersInJob,
         participantsNumber = 1,

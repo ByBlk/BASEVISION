@@ -5,7 +5,7 @@ StaffMenu.data = {
 StaffMenu.open = false
 StaffMenu.adminChecked = false
 
-StaffMenu.main = xmenu.create({ subtitle = "MENU ADMINISTRATION", banner = "https://cdn.eltrane.cloud/alkiarp/assets/xmenu/headers/admin.png", itemsPerPage = 15 })
+StaffMenu.main = xmenu.create({ subtitle = "MENU ADMINISTRATION", banner = "https://cdn.eltrane.cloud/3838384859/assets/xmenu/headers/admin.png", itemsPerPage = 15 })
 
 StaffMenu.reports = xmenu.createSub(StaffMenu.main, { subtitle = "REPORTS", itemsPerPage = 15 })
 StaffMenu.report = xmenu.createSub(StaffMenu.reports, { subtitle = "REPORT", itemsPerPage = 15 })

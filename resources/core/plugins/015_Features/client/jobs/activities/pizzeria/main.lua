@@ -311,11 +311,11 @@ function OpenMenuPizzeriaInt()
     Wait(50)
 
     VFW.Nui.JobMenu(true, {
-        headerBanner = "https://cdn.eltrane.cloud/alkiarp/assets/jobmenu/pizza_header.webp",
+        headerBanner = "https://cdn.eltrane.cloud/3838384859/assets/jobmenu/pizza_header.webp",
         choice = {
             label = "Scoots",
             isOptional = false,
-            choices = {{id = 1, label = 'Faggio', name = 'faggio', img= "https://cdn.eltrane.cloud/alkiarp/assets/jobmenu/pizza_vehicle.webp"}},
+            choices = {{id = 1, label = 'Faggio', name = 'faggio', img= "https://cdn.eltrane.cloud/3838384859/assets/jobmenu/pizza_vehicle.webp"}},
         },
         participants = PlayersInJob,
         participantsNumber = 1,

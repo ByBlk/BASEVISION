@@ -7,7 +7,7 @@ local lastCategory = "Economique"
 local function getLocation(category)
     locationData[category] = {}
 
-    for k, v in pairs(Kipstz.Shop.Location.Vehicule[category]) do
+    for k, v in pairs(BLK.Shop.Location.Vehicule[category]) do
         local tempCatalogue = {
             label = v.label,
             model = k,
@@ -107,7 +107,7 @@ function LoadLocation(data)
     VFW.Cam:Create('cam_location', cams.Cam.Normal)
 end
 
-for k, v in pairs(Kipstz.Shop.Location.Position) do
+for k, v in pairs(BLK.Shop.Location.Position) do
     VFW.CreatePed(v.Ped, 'ig_thornton')
 end
 
@@ -156,7 +156,7 @@ RegisterNuiCallback("nui:newgrandcatalogue:location:selectGridType", function(da
 
             lastEntity = CreateVehicle(model, cam.COH.x, cam.COH.y, cam.COH.z, cam.COH.w, false, false)
 
-            for name, vehicle in pairs(Kipstz.Shop.Location.Vehicule[lastCategory]) do
+            for name, vehicle in pairs(BLK.Shop.Location.Vehicule[lastCategory]) do
                 if name == model then
                     VFW.Nui.UpdateNewGrandMenu(getLocationData(lastCategory, GetMakeNameFromVehicleModel(GetEntityModel(lastEntity)), vehicle.label))
                     break
@@ -194,7 +194,7 @@ RegisterNuiCallback("nui:newgrandcatalogue:location:selectBuy", function(data)
     SetPlayerInvincible(VFW.PlayerData.ped, false)
     Wait(150)
 
-    for k, _ in pairs(Kipstz.Shop.Location.Vehicule[lastCategory]) do
+    for k, _ in pairs(BLK.Shop.Location.Vehicule[lastCategory]) do
         if k == data then
             TriggerServerEvent("core:server:setLocation", data, lastCategory, vector3(cams.Spawn.x, cams.Spawn.y, cams.Spawn.z), cams.Spawn.w)
             break

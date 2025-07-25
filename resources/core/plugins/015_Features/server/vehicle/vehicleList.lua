@@ -28,7 +28,7 @@ function VFW.CreateVehicle(owner, model, prop)
         plate, owner, model, json.encode(prop or {})
     })
     local weight = 10
-    for k, v in pairs(Kipstz.Vehicule) do
+    for k, v in pairs(BLK.Vehicule) do
         for i = 1, #v do
             if v[i].name == model then
                 weight = v[i].weight

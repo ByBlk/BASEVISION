@@ -71,15 +71,15 @@ end
 local cooldownVeh = 0
 
 function GetVehiculesBoutique()
-    -- Faut faire truc pour trouver la catégorie "VehiculesBoutique"
+    -- Faut faire truc pour trouver la catï¿½gorie "VehiculesBoutique"
     -- au final flemme 
-    return "tête de noeil frère"
+    return "tï¿½te de noeil frï¿½re"
 end
 
 local lastCategory = nil
 OpenMenuVehBoutique = function(veh, data)
     TriggerScreenblurFadeOut(200)
-    -- Véhicules
+    -- Vï¿½hicules
     --if string.lower(veh) == "adder" then 
     --    data.name = "seasparrow2"
     --    veh = "seasparrow2"
@@ -116,7 +116,7 @@ OpenMenuVehBoutique = function(veh, data)
         PinInteriorInMemory(GetInteriorAtCoords(-1266.8576660156, -3013.1684570313, -49.490184783936))        
     end
 
-    if data.marque == "Hélicoptère" then 
+    if data.marque == "Hï¿½licoptï¿½re" then 
         data.category = "heli"
         coordsVehBoutique = vector4(-1266.8576660156, -3013.1684570313, -49.490184783936, 40.814487457275)
         camCoords = vector3(-1271.4304199219, -3002.7814941406, -46.489810943604)
@@ -183,7 +183,7 @@ OpenMenuVehBoutique = function(veh, data)
     else
         while GetGameTimer() - cooldownVeh < 1000 do 
             Wait(1)
-            LoadingPrompt("Chargement du véhicule...", 2)
+            LoadingPrompt("Chargement du vï¿½hicule...", 2)
         end
         BusyspinnerOff()
         cooldownVeh = GetGameTimer()
@@ -299,15 +299,30 @@ RegisterNUICallback('nui:boutique-razv4:close', function(data, cb)
         DestroyCam(cam, true)
         cam = nil
     end
-    SetNuiFocus(false, false)
+    if CamBoutiqueVeh and DoesCamExist(CamBoutiqueVeh) then
+        RenderScriptCams(false, false, 1, true, true)
+        DestroyCam(CamBoutiqueVeh, true)
+        CamBoutiqueVeh = nil
+    end
+    if CamAchatBoutiqueVeh and DoesCamExist(CamAchatBoutiqueVeh) then
+        RenderScriptCams(false, false, 1, true, true)
+        DestroyCam(CamAchatBoutiqueVeh, true)
+        CamAchatBoutiqueVeh = nil
+    end
+    DestroyAllCams(true)
+    Wait(100) -- Ajoute ce dÃ©lai
     ClearFocus()
+    SetCamActive(0, true)
+    RenderScriptCams(false, false, 1, true, true)
+    SetFocusEntity(PlayerPedId())
+    SetNuiFocus(false, false)
     SetNuiFocusKeepInput(false)
     InsideVehBoutique = false
 
-
     VehBoutique = nil
     VehOptions = {}
-    cb('ok')
+    cb({status = "ok"})
+    print("boutiqueVeh:close")
 end)
 
 RegisterNUICallback("boutiqueVehSelect", function(data)
@@ -320,7 +335,7 @@ end)
 
 local insideAchat = false
 RegisterNUICallback("boutiqueVehBuy", function(data)
-    -- Je fais le coté serv d'abord
+    -- Je fais le cotï¿½ serv d'abord
     if not insideAchat then 
         if not data then return end
         insideAchat = true
@@ -430,26 +445,26 @@ RegisterNetEvent("core:boutiqueveh:try", function(name, category, oldcoords, col
             DeleteEntity(vehicle2)
             SetEntityCoords(PlayerPedId(), oldcoords)
 
-            -- ShowNotification("~r~Le délai a été dépassé")
+            -- ShowNotification("~r~Le dï¿½lai a ï¿½tï¿½ dï¿½passï¿½")
             exports['VisionHUD']:toggleVehicleInTry(false, nil)
             -- New notif
             exports['vNotif']:createNotification({
                 type = 'ROUGE',
                 -- duration = 5, -- In seconds, default:  4
-                content = "~s Le délai a été dépassé"
+                content = "~s Le dï¿½lai a ï¿½tï¿½ dï¿½passï¿½"
             })
 
             inTryVeh = false
             TriggerServerEvent('core:unsetTryCar', "boutique")
             return
         elseif IsControlJustPressed(0, 178) then
-            -- ShowNotification("~r~Vous avez annulé le test")
+            -- ShowNotification("~r~Vous avez annulï¿½ le test")
             exports['VisionHUD']:toggleVehicleInTry(false, nil)
             -- New notif
             exports['vNotif']:createNotification({
                 type = 'JAUNE',
                 -- duration = 5, -- In seconds, default:  4
-                content = "Vous avez ~s annulé ~c le test"
+                content = "Vous avez ~s annulï¿½ ~c le test"
             })
             TriggerServerEvent("core:boutique:finishedtest")
 
@@ -648,7 +663,7 @@ function SpawnVehBoutique(vehent, category)
         label = "ACHAT VEHICULE",
         labelColor = "#F0E68C",
         logo = "https://cdn.visionrp.fr/vision-cdn-v1/icons/logo.webp",
-        mainMessage = "Vous venez d'acheter ce véhicule !",
+        mainMessage = "Vous venez d'acheter ce vï¿½hicule !",
         duration = 10,
     }) ]]
     StartBoutiqueCam(vehent, 40.0, category)

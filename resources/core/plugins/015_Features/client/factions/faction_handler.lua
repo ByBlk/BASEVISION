@@ -81,14 +81,14 @@ function subRadialGestion()
 
     table.insert(ELEMENTS, {
         name = "QUITTER LE CREW",
-        icon = "https://cdn.eltrane.cloud/alkiarp/assets/radialmenus/leave.svg",
+        icon = "https://cdn.eltrane.cloud/3838384859/assets/radialmenus/leave.svg",
         action = "LeaveCrew"
     })
     
     if HasFactionPermission("manage_permissions") then
         table.insert(ELEMENTS, {
             name = "GESTION",
-            icon = "https://cdn.eltrane.cloud/alkiarp/assets/radialmenus/gestion.svg",
+            icon = "https://cdn.eltrane.cloud/3838384859/assets/radialmenus/gestion.svg",
             action = "OpenCrewGestion"
         })
     end
@@ -96,13 +96,13 @@ function subRadialGestion()
 
     table.insert(ELEMENTS, {
         name = "RETOUR",
-        icon = "https://cdn.eltrane.cloud/alkiarp/assets/radialmenus/leave.svg",
+        icon = "https://cdn.eltrane.cloud/3838384859/assets/radialmenus/leave.svg",
         action = "OpenRadialFaction"
     })
 
     table.insert(ELEMENTS, {
         name = "INVITER",
-        icon = "https://cdn.eltrane.cloud/alkiarp/assets/radialmenus/gestion.svg",
+        icon = "https://cdn.eltrane.cloud/3838384859/assets/radialmenus/gestion.svg",
         action = "InviteCrew"
     })
 
@@ -127,25 +127,25 @@ function OpenRadialFaction()
 
     table.insert(ELEMENTS, {
         name = "TERRITOIRE",
-        icon = "https://cdn.eltrane.cloud/alkiarp/assets/radialmenus/territoire.svg",
+        icon = "https://cdn.eltrane.cloud/3838384859/assets/radialmenus/territoire.svg",
         action = "OpenMenuTerrioire"
     })
 
         table.insert(ELEMENTS, {
             name = "GESTION",
-            icon = "https://cdn.eltrane.cloud/alkiarp/assets/radialmenus/gestion.svg",
+            icon = "https://cdn.eltrane.cloud/3838384859/assets/radialmenus/gestion.svg",
             action = "subRadialGestion"
         })
 
     table.insert(ELEMENTS, {
         name = "TABLETTE",
-        icon = "https://cdn.eltrane.cloud/alkiarp/assets/radialmenus/Tablette.svg",
+        icon = "https://cdn.eltrane.cloud/3838384859/assets/radialmenus/Tablette.svg",
         action = "OpenIllegalTablet"
     })
 
     table.insert(ELEMENTS, {
         name = "MISSION",
-        icon = "https://cdn.eltrane.cloud/alkiarp/assets/radialmenus/mission.svg",
+        icon = "https://cdn.eltrane.cloud/3838384859/assets/radialmenus/mission.svg",
         action = "OpenSecuroServCenter"
     })
 

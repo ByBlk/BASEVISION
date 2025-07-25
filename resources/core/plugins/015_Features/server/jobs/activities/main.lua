@@ -32,7 +32,7 @@ RegisterNetEvent("core:activities:askJob", function(ply, label, forcePremium)
     local xPlayer = VFW.GetPlayerFromId(src)
     --if forcePremium then
     --    if GetPlayer(ply):getSubscription() == 0 then
-    --        TriggerClientEvent("__kpz::createNotification", src, {
+    --        TriggerClientEvent("__blk::createNotification", src, {
     --            type = 'ROUGE',
     --            content = "Votre ami doit avoir le premium pour pouvoir participer."
     --        })

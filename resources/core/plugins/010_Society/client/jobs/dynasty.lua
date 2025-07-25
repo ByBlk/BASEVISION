@@ -6,30 +6,30 @@
          main = {
              {
                  name = "ANNONCE",
-                 icon = "https://cdn.eltrane.cloud/alkiarp/assets/radialmenus/megaphone.svg",
+                 icon = "https://cdn.eltrane.cloud/3838384859/assets/radialmenus/megaphone.svg",
                  action = "CreateJobAdvert"
              },
              {
                  name = "FACTURE",
-                 icon = "https://cdn.eltrane.cloud/alkiarp/assets/radialmenus/billet.svg",
+                 icon = "https://cdn.eltrane.cloud/3838384859/assets/radialmenus/billet.svg",
                  action = "OpenInvoice"
              },
              {
                  name = "PRISE DE SERVICE",
-                 icon = "https://cdn.eltrane.cloud/alkiarp/assets/radialmenus/checkmark.svg",
+                 icon = "https://cdn.eltrane.cloud/3838384859/assets/radialmenus/checkmark.svg",
                  action = "SetJobDuty"
              },
              {
                  name = "PROPRIÉTÉ",
-                 icon = "https://cdn.eltrane.cloud/alkiarp/assets/radialmenus/house.svg",
+                 icon = "https://cdn.eltrane.cloud/3838384859/assets/radialmenus/house.svg",
                  action = "OpenPropertyCreationMenu"
              }
          }
      },
-     Sonnette = Kipstz.Jobs.Dynasty.Sonnette,
-     Gestion = Kipstz.Jobs.Dynasty.Gestion,
-     Stockage = Kipstz.Jobs.Dynasty.Stockage,
-     Casier = Kipstz.Jobs.Dynasty.Casier,
-     Vetement = Kipstz.Jobs.Dynasty.Vetement,
-     Garage = Kipstz.Jobs.Dynasty.Garage
+     Sonnette = BLK.Jobs.Dynasty.Sonnette,
+     Gestion = BLK.Jobs.Dynasty.Gestion,
+     Stockage = BLK.Jobs.Dynasty.Stockage,
+     Casier = BLK.Jobs.Dynasty.Casier,
+     Vetement = BLK.Jobs.Dynasty.Vetement,
+     Garage = BLK.Jobs.Dynasty.Garage
  })

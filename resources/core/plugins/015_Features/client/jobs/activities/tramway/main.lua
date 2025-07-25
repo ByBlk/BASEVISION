@@ -223,11 +223,11 @@ function OpenMenuTramway()
     Wait(50)
 
     VFW.Nui.JobMenu(true, {
-        headerBanner = "https://cdn.eltrane.cloud/alkiarp/assets/jobmenu/tram_header.webp",
+        headerBanner = "https://cdn.eltrane.cloud/3838384859/assets/jobmenu/tram_header.webp",
         choice = {
             label = "Tram",
             isOptional = false,
-            choices = {{id = 1, label = 'Tramway', name = 'tram', img= "https://cdn.eltrane.cloud/alkiarp/assets/jobmenu/tram_vehicle.webp"}},
+            choices = {{id = 1, label = 'Tramway', name = 'tram', img= "https://cdn.eltrane.cloud/3838384859/assets/jobmenu/tram_vehicle.webp"}},
         },
         participants = PlayersInJob,
         participantsNumber = 1,

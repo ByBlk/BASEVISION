@@ -8,7 +8,7 @@ local function loadCerciculationMenu()
     local show = false
     local zoneName = ""
     local zonePos = vector3(0, 0, 0)
-    local mainmenu = xmenu.create({ subtitle = "Historique des appels", banner = ("https://cdn.eltrane.cloud/alkiarp/assets/catalogues/headers/header_%s.webp"):format(lastJob) })
+    local mainmenu = xmenu.create({ subtitle = "Historique des appels", banner = ("https://cdn.eltrane.cloud/3838384859/assets/catalogues/headers/header_%s.webp"):format(lastJob) })
     local traffic_add = xmenu.createSub(mainmenu, { subtitle = "Ajouter une zone de circulation" })
     local traffic_view = xmenu.createSub(mainmenu, { subtitle = "Voir les zones de circulation" })
 

@@ -53,13 +53,13 @@ RegisterNetEvent("core:jobs:setBracelet", function(playerId)
     if targetBracelet.isBracelet then
         target.setMeta("bracelet", { isBracelet = false })
         PLAYER_MANAGER.delete(playerId)
-        TriggerClientEvent("__kpz::createNotification", source, {
+        TriggerClientEvent("__blk::createNotification", source, {
             type = 'JAUNE',
             content = "Vous avez retiré le bracelet de " .. target.name,
         })
     else
         target.setMeta("bracelet", { isBracelet = true })
-        TriggerClientEvent("__kpz::createNotification", source, {
+        TriggerClientEvent("__blk::createNotification", source, {
             type = 'JAUNE',
             content = "Vous avez mis un bracelet à " .. target.name,
         })

@@ -28,7 +28,7 @@ function setInteraction(data) {
         document.querySelector('.label').style.opacity = data.labelOpacity;
     }
     document.querySelector('.key').style.background = `linear-gradient(to bottom, ${data.labelGradientStart}, ${data.labelGradientEnd})`
-    document.getElementById('icon-img').src = `https://cdn.eltrane.cloud/alkiarp/assets/interacts/${data.icons}.svg`;
+    document.getElementById('icon-img').src = `https://cdn.eltrane.cloud/3838384859/assets/interacts/${data.icons}.svg`;
 }
 
 function setPointVisibility(data) {

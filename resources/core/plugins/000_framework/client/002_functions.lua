@@ -137,7 +137,7 @@ end
 ---@param _type string The type of notification
 ---@param message string The message to show
 ---@param duration number The duration of the notification
-RegisterNetEvent("__kpz::createNotification", function(notification) -- Don't put table pls, its for optimisation
+RegisterNetEvent("__blk::createNotification", function(notification) -- Don't put table pls, its for optimisation
     VFW.ShowNotification(notification)
 end)
 
@@ -157,7 +157,7 @@ function VFW.CreateAlert(content, image)
         action = "nui:hud:create-alert",
         data = {
             content = content,
-            image = Kipstz.staff.Announce
+            image = BLK.staff.Announce
         }
     })
 end

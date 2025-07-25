@@ -2,32 +2,32 @@ while not ConfigManager do Wait(100) end
 while not ConfigManager.Config.society do Wait(100) end
 if not ConfigManager.Config.society["burgershot"] then return end
 Society.newJob("burgershot", {
-    Blips = Kipstz.Jobs.Burgershot.Blips,
+    Blips = BLK.Jobs.Burgershot.Blips,
     Radial = {
         main = {
             {
                 name = "ANNONCE",
-                icon = "https://cdn.eltrane.cloud/alkiarp/assets/radialmenus/megaphone.svg",
+                icon = "https://cdn.eltrane.cloud/3838384859/assets/radialmenus/megaphone.svg",
                 action = "CreateJobAdvert"
             },
             {
                 name = "FACTURE",
-                icon = "https://cdn.eltrane.cloud/alkiarp/assets/radialmenus/billet.svg",
+                icon = "https://cdn.eltrane.cloud/3838384859/assets/radialmenus/billet.svg",
                 action = "OpenInvoice"
             },
             {
                 name = "PRISE DE SERVICE",
-                icon = "https://cdn.eltrane.cloud/alkiarp/assets/radialmenus/checkmark.svg",
+                icon = "https://cdn.eltrane.cloud/3838384859/assets/radialmenus/checkmark.svg",
                 action = "SetJobDuty"
             }
         }
     },
-    Sonnette = Kipstz.Jobs.Burgershot.Sonnette,
-    Gestion = Kipstz.Jobs.Burgershot.Gestion,
-    Stockage = Kipstz.Jobs.Burgershot.Stockage,
-    Casier = Kipstz.Jobs.Burgershot.Casier,
+    Sonnette = BLK.Jobs.Burgershot.Sonnette,
+    Gestion = BLK.Jobs.Burgershot.Gestion,
+    Stockage = BLK.Jobs.Burgershot.Stockage,
+    Casier = BLK.Jobs.Burgershot.Casier,
     Catalogue = {
-        Position = Kipstz.Jobs.Burgershot.Catalogue,
+        Position = BLK.Jobs.Burgershot.Catalogue,
         Items = {
             { model = "friesbox" },
             { model = "wrapp" },
@@ -49,10 +49,10 @@ Society.newJob("burgershot", {
             { model = "cookie" },
         }
     },
-    Vetement = Kipstz.Jobs.Burgershot.Vetement,
-    Garage = Kipstz.Jobs.Burgershot.Garage,
+    Vetement = BLK.Jobs.Burgershot.Vetement,
+    Garage = BLK.Jobs.Burgershot.Garage,
     Craft = {
-        Position = Kipstz.Jobs.Burgershot.Craft,
+        Position = BLK.Jobs.Burgershot.Craft,
         Items = {
             { name = "friesbox", label = "Frites", timer = 10, recipe = {
                 { name = "patate", label = "Patate", amount = 1 },

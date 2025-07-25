@@ -61,7 +61,7 @@ local function EndExam(success, message, licenseName)
         label = licenseType,
         labelColor = success and "#00c92b" or "#ff4141",
         mainColor = success and 'green' or 'rouge',
-        logo = "https://cdn.eltrane.cloud/alkiarp/assets/autoecole/abdel.webp",
+        logo = "https://cdn.eltrane.cloud/3838384859/assets/autoecole/abdel.webp",
         mainMessage = message,
         duration = 10,
     })
@@ -154,7 +154,7 @@ local function StartDrivingSchool(typeDMV)
         name = "MONITEUR",
         label = licenseType,
         labelColor = "#10A8D1",
-        logo = "https://cdn.eltrane.cloud/alkiarp/assets/autoecole/abdel.webp",
+        logo = "https://cdn.eltrane.cloud/3838384859/assets/autoecole/abdel.webp",
         mainMessage = "Suis l'itinéraire en respectant les règles de sécurité.",
         duration = 10,
     })
@@ -182,7 +182,7 @@ local function StartDrivingSchool(typeDMV)
                     name = "MONITEUR",
                     label = licenseType,
                     labelColor = "#10A8D1",
-                    logo = "https://cdn.eltrane.cloud/alkiarp/assets/autoecole/abdel.webp",
+                    logo = "https://cdn.eltrane.cloud/3838384859/assets/autoecole/abdel.webp",
                     mainMessage = "Vous avez quitté le véhicule, veuillez le rejoindre vous avez 10 secondes.",
                     duration = 10,
                 })
@@ -204,7 +204,7 @@ local function StartDrivingSchool(typeDMV)
                     name = "MONITEUR",
                     label = licenseType,
                     labelColor = "#10A8D1",
-                    logo = "https://cdn.eltrane.cloud/alkiarp/assets/autoecole/abdel.webp",
+                    logo = "https://cdn.eltrane.cloud/3838384859/assets/autoecole/abdel.webp",
                     mainMessage = "Attention, votre véhicule est endommagé !",
                     duration = 10,
                 })
@@ -234,7 +234,7 @@ local function StartDrivingSchool(typeDMV)
                     name = "MONITEUR",
                     label = licenseType,
                     labelColor = "#10A8D1",
-                    logo = "https://cdn.eltrane.cloud/alkiarp/assets/autoecole/abdel.webp",
+                    logo = "https://cdn.eltrane.cloud/3838384859/assets/autoecole/abdel.webp",
                     mainMessage = "Attention, vous allez trop vite !",
                     duration = 10,
                 })
@@ -674,7 +674,7 @@ RegisterNuiCallback("nui:newgrandcatalogue:dmvschool:selectBuy", function(data)
                 name = "MONITEUR",
                 label = "CONDUITE",
                 labelColor = "#10A8D1",
-                logo = "https://cdn.eltrane.cloud/alkiarp/assets/autoecole/abdel.webp",
+                logo = "https://cdn.eltrane.cloud/3838384859/assets/autoecole/abdel.webp",
                 mainMessage = "Vous avez déjà le permis de conduire.",
                 duration = 10,
             })
@@ -689,7 +689,7 @@ RegisterNuiCallback("nui:newgrandcatalogue:dmvschool:selectBuy", function(data)
     --            name = "MONITEUR",
     --            label = "CONDUITE",
     --            labelColor = "#10A8D1",
-    --            logo = "https://cdn.eltrane.cloud/alkiarp/assets/autoecole/abdel.webp",
+    --            logo = "https://cdn.eltrane.cloud/3838384859/assets/autoecole/abdel.webp",
     --            mainMessage = "Vous avez déjà le permis de conduire.",
     --            duration = 10,
     --        })
@@ -703,7 +703,7 @@ RegisterNuiCallback("nui:newgrandcatalogue:dmvschool:selectBuy", function(data)
     --            name = "MONITEUR",
     --            label = "CONDUITE",
     --            labelColor = "#10A8D1",
-    --            logo = "https://cdn.eltrane.cloud/alkiarp/assets/autoecole/abdel.webp",
+    --            logo = "https://cdn.eltrane.cloud/3838384859/assets/autoecole/abdel.webp",
     --            mainMessage = "Vous avez déjà le permis de conduire.",
     --            duration = 10,
     --        })
@@ -720,7 +720,7 @@ RegisterNuiCallback("nui:newgrandcatalogue:dmvschool:selectBuy", function(data)
     --            name = "MONITEUR",
     --            label = "CONDUITE",
     --            labelColor = "#10A8D1",
-    --            logo = "https://cdn.eltrane.cloud/alkiarp/assets/autoecole/abdel.webp",
+    --            logo = "https://cdn.eltrane.cloud/3838384859/assets/autoecole/abdel.webp",
     --            mainMessage = "Vous avez déjà le permis de conduire.",
     --            duration = 10,
     --        })
@@ -737,7 +737,7 @@ RegisterNuiCallback("nui:newgrandcatalogue:dmvschool:selectBuy", function(data)
     --            name = "MONITEUR",
     --            label = "CONDUITE",
     --            labelColor = "#10A8D1",
-    --            logo = "https://cdn.eltrane.cloud/alkiarp/assets/autoecole/abdel.webp",
+    --            logo = "https://cdn.eltrane.cloud/3838384859/assets/autoecole/abdel.webp",
     --            mainMessage = "Vous avez déjà le permis de conduire.",
     --            duration = 10,
     --        })
@@ -754,7 +754,7 @@ RegisterNuiCallback("nui:newgrandcatalogue:dmvschool:selectBuy", function(data)
     --            name = "MONITEUR",
     --            label = "CONDUITE",
     --            labelColor = "#10A8D1",
-    --            logo = "https://cdn.eltrane.cloud/alkiarp/assets/autoecole/abdel.webp",
+    --            logo = "https://cdn.eltrane.cloud/3838384859/assets/autoecole/abdel.webp",
     --            mainMessage = "Vous avez déjà le permis de conduire.",
     --            duration = 10,
     --        })

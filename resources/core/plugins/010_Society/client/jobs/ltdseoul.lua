@@ -2,32 +2,32 @@ while not ConfigManager do Wait(100) end
 while not ConfigManager.Config.society do Wait(100) end
 if not ConfigManager.Config.society["ltdseoul"] then return end
 Society.newJob("ltdseoul", {
-    Blips = Kipstz.Jobs.LTDSeoul.Blips,
+    Blips = BLK.Jobs.LTDSeoul.Blips,
     Radial = {
         main = {
             {
                 name = "ANNONCE",
-                icon = "https://cdn.eltrane.cloud/alkiarp/assets/radialmenus/megaphone.svg",
+                icon = "https://cdn.eltrane.cloud/3838384859/assets/radialmenus/megaphone.svg",
                 action = "CreateJobAdvert"
             },
             {
                 name = "FACTURE",
-                icon = "https://cdn.eltrane.cloud/alkiarp/assets/radialmenus/billet.svg",
+                icon = "https://cdn.eltrane.cloud/3838384859/assets/radialmenus/billet.svg",
                 action = "OpenInvoice"
             },
             {
                 name = "PRISE DE SERVICE",
-                icon = "https://cdn.eltrane.cloud/alkiarp/assets/radialmenus/checkmark.svg",
+                icon = "https://cdn.eltrane.cloud/3838384859/assets/radialmenus/checkmark.svg",
                 action = "SetJobDuty"
             }
         }
     },
-    Sonnette = Kipstz.Jobs.LTDSeoul.Sonnette,
-    Gestion = Kipstz.Jobs.LTDSeoul.Gestion,
-    Stockage = Kipstz.Jobs.LTDSeoul.Stockage,
-    Casier = Kipstz.Jobs.LTDSeoul.Casier,
+    Sonnette = BLK.Jobs.LTDSeoul.Sonnette,
+    Gestion = BLK.Jobs.LTDSeoul.Gestion,
+    Stockage = BLK.Jobs.LTDSeoul.Stockage,
+    Casier = BLK.Jobs.LTDSeoul.Casier,
     Catalogue = {
-        Position = Kipstz.Jobs.LTDSeoul.Catalogue,
+        Position = BLK.Jobs.LTDSeoul.Catalogue,
         Items = {
             { model = "triangle" },
             { model = "lollipop" },
@@ -48,9 +48,9 @@ Society.newJob("ltdseoul", {
             { model = "can" },
         }
     },
-    Vetement = Kipstz.Jobs.LTDSeoul.Vetement,
+    Vetement = BLK.Jobs.LTDSeoul.Vetement,
     Craft = {
-        Position = Kipstz.Jobs.LTDSeoul.Craft,
+        Position = BLK.Jobs.LTDSeoul.Craft,
         Items = {
             { name = "triangle", label = "Sandwich Triangle", timer = 10, recipe = {
                 { name = "paindemie", label = "pain de mie", amount = 1 },

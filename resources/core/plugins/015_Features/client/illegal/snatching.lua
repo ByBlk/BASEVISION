@@ -101,7 +101,7 @@ local function HandleSuccessfulMugging(playerPed, ped, obj, crew, zone, isInSout
                     Wait(4000)
                     ClearPedTasks(playerPed)
                     for i = 1, math.random(4, 6) do
-                        TriggerServerEvent("core:addItemToInventory", Kipstz.arache.items[math.random(1, #Kipstz.arache.items)], 1)
+                        TriggerServerEvent("core:addItemToInventory", BLK.arache.items[math.random(1, #BLK.arache.items)], 1)
                     end
                     VFW.ShowNotification({
                         type = 'JAUNE',
@@ -177,7 +177,7 @@ local function HandleFleeScenario(playerPed, ped, obj, crew, isInSouth, varArrac
                         Wait(4000)
                         ClearPedTasks(playerPed)
                         for i = 1, math.random(4, 6) do
-                            TriggerServerEvent("core:addItemToInventory", Kipstz.arache.items[math.random(1, #Kipstz.arache.items)], 1)
+                            TriggerServerEvent("core:addItemToInventory", BLK.arache.items[math.random(1, #BLK.arache.items)], 1)
                         end
                         VFW.ShowNotification({
                             type = 'JAUNE',
@@ -248,7 +248,7 @@ local function HandlePhoneScenario(playerPed, ped, obj, crew, isInSouth, varArra
                     Wait(4000)
                     ClearPedTasks(playerPed)
                     for i = 1, math.random(4, 6) do
-                        TriggerServerEvent("core:addItemToInventory", Kipstz.arache.items[math.random(1, #Kipstz.arache.items)], 1)
+                        TriggerServerEvent("core:addItemToInventory", BLK.arache.items[math.random(1, #BLK.arache.items)], 1)
                     end
                     VFW.ShowNotification({
                         type = 'JAUNE',

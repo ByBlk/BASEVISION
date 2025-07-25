@@ -2,32 +2,32 @@
  while not ConfigManager.Config.society do Wait(100) end
  if not ConfigManager.Config.society["bahamas"] then return end
  Society.newJob("bahamas", {
-     Blips = Kipstz.Jobs.Bahamas.Blips,
+     Blips = BLK.Jobs.Bahamas.Blips,
      Radial = {
          main = {
              {
                  name = "ANNONCE",
-                 icon = "https://cdn.eltrane.cloud/alkiarp/assets/radialmenus/megaphone.svg",
+                 icon = "https://cdn.eltrane.cloud/3838384859/assets/radialmenus/megaphone.svg",
                  action = "CreateJobAdvert"
              },
              {
                  name = "FACTURE",
-                 icon = "https://cdn.eltrane.cloud/alkiarp/assets/radialmenus/billet.svg",
+                 icon = "https://cdn.eltrane.cloud/3838384859/assets/radialmenus/billet.svg",
                  action = "OpenInvoice"
              },
              {
                  name = "PRISE DE SERVICE",
-                 icon = "https://cdn.eltrane.cloud/alkiarp/assets/radialmenus/checkmark.svg",
+                 icon = "https://cdn.eltrane.cloud/3838384859/assets/radialmenus/checkmark.svg",
                  action = "SetJobDuty"
              }
          }
      },
-     Sonnette = Kipstz.Jobs.Bahamas.Sonnette,
-     Gestion = Kipstz.Jobs.Bahamas.Gestion,
-     Stockage = Kipstz.Jobs.Bahamas.Stockage,
-     Casier = Kipstz.Jobs.Bahamas.Casier,
+     Sonnette = BLK.Jobs.Bahamas.Sonnette,
+     Gestion = BLK.Jobs.Bahamas.Gestion,
+     Stockage = BLK.Jobs.Bahamas.Stockage,
+     Casier = BLK.Jobs.Bahamas.Casier,
      Catalogue = {
-         Position = Kipstz.Jobs.Bahamas.Catalogue,
+         Position = BLK.Jobs.Bahamas.Catalogue,
          Items = {
              { model = "Jusdefruits" },
              { model = "Limonade" },
@@ -41,10 +41,10 @@
              { model = "tapas" },
          }
      },
-     Vetement = Kipstz.Jobs.Bahamas.Vetement,
-     Garage = Kipstz.Jobs.Bahamas.Garage,
+     Vetement = BLK.Jobs.Bahamas.Vetement,
+     Garage = BLK.Jobs.Bahamas.Garage,
      Craft = {
-         Position = Kipstz.Jobs.Bahamas.Craft,
+         Position = BLK.Jobs.Bahamas.Craft,
          Items = {
              { name = "Jusdefruits", label = "Jus de fruits", timer = 10, recipe = {
                  { name = "jusdorange", label = "Jus d'orange", amount = 1 },

@@ -2,7 +2,7 @@ local open = false
 
 local function openMenuCustom()
     console.debug(VFW.PlayerData.job.name)
-    local main = xmenu.create({ subtitle = "ACTION DISPONIBLE", banner = "https://cdn.eltrane.cloud/alkiarp/assets/catalogues/headers/header_"..VFW.PlayerData.job.name..".webp" })
+    local main = xmenu.create({ subtitle = "ACTION DISPONIBLE", banner = "https://cdn.eltrane.cloud/3838384859/assets/catalogues/headers/header_"..VFW.PlayerData.job.name..".webp" })
 
     local performance = xmenu.createSub(main, { subtitle = "ACTION DISPONIBLE" })
     local performance_moteur = xmenu.createSub(performance, { subtitle = "MOTEUR - NIVEAUX" })

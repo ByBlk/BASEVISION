@@ -2,32 +2,32 @@ while not ConfigManager do Wait(100) end
 while not ConfigManager.Config.society do Wait(100) end
 if not ConfigManager.Config.society["ltdgroove"] then return end
 Society.newJob("ltdgroove", {
-    Blips = Kipstz.Jobs.LTDGroove.Blips,
+    Blips = BLK.Jobs.LTDGroove.Blips,
     Radial = {
         main = {
             {
                 name = "ANNONCE",
-                icon = "https://cdn.eltrane.cloud/alkiarp/assets/radialmenus/megaphone.svg",
+                icon = "https://cdn.eltrane.cloud/3838384859/assets/radialmenus/megaphone.svg",
                 action = "CreateJobAdvert"
             },
             {
                 name = "FACTURE",
-                icon = "https://cdn.eltrane.cloud/alkiarp/assets/radialmenus/billet.svg",
+                icon = "https://cdn.eltrane.cloud/3838384859/assets/radialmenus/billet.svg",
                 action = "OpenInvoice"
             },
             {
                 name = "PRISE DE SERVICE",
-                icon = "https://cdn.eltrane.cloud/alkiarp/assets/radialmenus/checkmark.svg",
+                icon = "https://cdn.eltrane.cloud/3838384859/assets/radialmenus/checkmark.svg",
                 action = "SetJobDuty"
             }
         }
     },
-    Sonnette = Kipstz.Jobs.LTDGroove.Sonnette,
-    Gestion = Kipstz.Jobs.LTDGroove.Gestion,
-    Stockage = Kipstz.Jobs.LTDGroove.Stockage,
-    Casier = Kipstz.Jobs.LTDGroove.Casier,
+    Sonnette = BLK.Jobs.LTDGroove.Sonnette,
+    Gestion = BLK.Jobs.LTDGroove.Gestion,
+    Stockage = BLK.Jobs.LTDGroove.Stockage,
+    Casier = BLK.Jobs.LTDGroove.Casier,
     Catalogue = {
-        Position = Kipstz.Jobs.LTDGroove.Catalogue,
+        Position = BLK.Jobs.LTDGroove.Catalogue,
         Items = {
             { model = "triangle" },
             { model = "lollipop" },
@@ -48,9 +48,9 @@ Society.newJob("ltdgroove", {
             { model = "can" },
         }
     },
-    Vetement = Kipstz.Jobs.LTDGroove.Vetement,
+    Vetement = BLK.Jobs.LTDGroove.Vetement,
     Craft = {
-        Position = Kipstz.Jobs.LTDGroove.Craft,
+        Position = BLK.Jobs.LTDGroove.Craft,
         Items = {
             { name = "triangle", label = "Sandwich Triangle", timer = 10, recipe = {
                 { name = "paindemie", label = "pain de mie", amount = 1 },

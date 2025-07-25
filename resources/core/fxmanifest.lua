@@ -1,8 +1,3 @@
-shared_script '@WaveShield/resource/waveshield.js' --this line was automatically written by WaveShield
-
-shared_script '@WaveShield/resource/waveshield.lua' --this line was automatically written by WaveShield
-
-
 
 fx_version 'cerulean'
 
@@ -27,7 +22,6 @@ files {
 shared_scripts {
     "config.lua",
     "modules/**/sh_*.lua",
-    "modules/**/submodules/sh_*.lua",
     "plugins/**/shared/**/**",
 }
 

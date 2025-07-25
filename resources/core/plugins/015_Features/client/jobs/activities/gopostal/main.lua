@@ -430,11 +430,11 @@ function OpenMenuGoPostal()
     Wait(50)
 
     VFW.Nui.JobMenu(true, {
-        headerBanner = "https://cdn.eltrane.cloud/alkiarp/old_a_trier/Discord/10493763812109926601206612952321495100bannieregopostal1.webp",
+        headerBanner = "https://cdn.eltrane.cloud/3838384859/old_a_trier/Discord/10493763812109926601206612952321495100bannieregopostal1.webp",
         choice = {
             label = "Camions",
             isOptional = false,
-            choices = {{id = 1, label = 'Boxville', name = 'boxville2', img= "https://cdn.eltrane.cloud/alkiarp/old_a_trier/Discord/12015580604732580841202581456879230976image2removebgpreview.webp"}},
+            choices = {{id = 1, label = 'Boxville', name = 'boxville2', img= "https://cdn.eltrane.cloud/3838384859/old_a_trier/Discord/12015580604732580841202581456879230976image2removebgpreview.webp"}},
         },
         participants = PlayersInJob,
         participantsNumber = 2,

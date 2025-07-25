@@ -190,7 +190,7 @@ local function loadAlertMenu()
     if not lastJob then return end
 
     local open = false
-    local mainmenu = xmenu.create({ subtitle = "Historique des appels", banner = ("https://cdn.eltrane.cloud/alkiarp/assets/catalogues/headers/header_%s.webp"):format(lastJob) })
+    local mainmenu = xmenu.create({ subtitle = "Historique des appels", banner = ("https://cdn.eltrane.cloud/3838384859/assets/catalogues/headers/header_%s.webp"):format(lastJob) })
 
     local function OpenAlerteMenu()
         if open then

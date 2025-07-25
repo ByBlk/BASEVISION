@@ -4,7 +4,7 @@ RegisterNetEvent("vfw:cardealer:buy", function(data, prop, manufacture)
     local price = 0
     local label = ""
     local vehicle = VFW.CreateVehicle("player:"..xPlayer.id, data, prop)
-    for _, vehicles in pairs(Kipstz.Vehicule) do
+    for _, vehicles in pairs(BLK.Vehicule) do
         if type(vehicles) == "table" then
             for _, vehicle in ipairs(vehicles) do
                 console.debug(vehicle.model)

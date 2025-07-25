@@ -31,7 +31,7 @@ local function loadK9Menu()
     local k9Blip = nil
     local currentDogIndex = 1
     local isAttacking = false
-    local mainMenu = xmenu.create({ subtitle = "Actions Disponibles", banner = ("https://cdn.eltrane.cloud/alkiarp/assets/catalogues/headers/header_%s.webp"):format(lastJob) })
+    local mainMenu = xmenu.create({ subtitle = "Actions Disponibles", banner = ("https://cdn.eltrane.cloud/3838384859/assets/catalogues/headers/header_%s.webp"):format(lastJob) })
 
     local function ShowNotification(message, type)
         VFW.ShowNotification({

@@ -15,7 +15,7 @@ AddEventHandler("core:ChangeHeistsLimitByID", function(id, action)
 
             if action == "reset" then
                 print("Resetting Heists Limit for ID: " .. playerLicense)
-                TriggerClientEvent("__kpz::createNotification", xPlayer.source, {
+                TriggerClientEvent("__blk::createNotification", xPlayer.source, {
                     type = 'VERT',
                     content = "Votre limite de braquage illégaux a été réinitialisé !"
                 })

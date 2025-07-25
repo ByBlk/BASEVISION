@@ -13,7 +13,7 @@ VFW.Nui.AnnounceEntreprise = function(visible)
             action = "nui:CardNewsSocietyCreate:data",
             data = {
                 name_society = VFW.PlayerData.job.label,
-                logo_society = "https://cdn.eltrane.cloud/alkiarp/assets/hud/notifications/"..VFW.PlayerData.job.name..".webp",
+                logo_society = "https://cdn.eltrane.cloud/3838384859/assets/hud/notifications/"..VFW.PlayerData.job.name..".webp",
                 preset = preset
             }
         })

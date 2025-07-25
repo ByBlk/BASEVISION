@@ -260,7 +260,7 @@ end
 
 function OpenMenuMine()
     VFW.Nui.JobMenu(true, {
-        headerBanner = "https://cdn.eltrane.cloud/alkiarp/old_a_trier/Discord/10493763812109926601206612668497006632MINE.webp",
+        headerBanner = "https://cdn.eltrane.cloud/3838384859/old_a_trier/Discord/10493763812109926601206612668497006632MINE.webp",
         choice = {
             label = "Bison",
             isOptional = false,
@@ -269,7 +269,7 @@ function OpenMenuMine()
                     id = 1,
                     label = 'Bison',
                     name = 'bison',
-                    img= "https://cdn.eltrane.cloud/alkiarp/old_a_trier/Concessionnaire/Voiture/bison.webp",
+                    img= "https://cdn.eltrane.cloud/3838384859/old_a_trier/Concessionnaire/Voiture/bison.webp",
                 },
             },
         },

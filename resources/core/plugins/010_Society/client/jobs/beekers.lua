@@ -2,27 +2,27 @@ while not ConfigManager do Wait(100) end
 while not ConfigManager.Config.society do Wait(100) end
 if not ConfigManager.Config.society["beekers"] then return end
 Society.newJob("beekers", {
-    Blips = Kipstz.Jobs.Beekers.Blips,
+    Blips = BLK.Jobs.Beekers.Blips,
     Radial = {
         main = {
             {
                 name = "ANNONCE",
-                icon = "https://cdn.eltrane.cloud/alkiarp/assets/radialmenus/megaphone.svg",
+                icon = "https://cdn.eltrane.cloud/3838384859/assets/radialmenus/megaphone.svg",
                 action = "CreateJobAdvert",
             },
             {
                 name = "FACTURE",
-                icon = "https://cdn.eltrane.cloud/alkiarp/assets/radialmenus/billet.svg",
+                icon = "https://cdn.eltrane.cloud/3838384859/assets/radialmenus/billet.svg",
                 action = "OpenInvoice"
             },
             {
                 name = "PRISE DE SERVICE",
-                icon = "https://cdn.eltrane.cloud/alkiarp/assets/radialmenus/checkmark.svg",
+                icon = "https://cdn.eltrane.cloud/3838384859/assets/radialmenus/checkmark.svg",
                 action = "SetJobDuty",
             },
             {
                 name = "REPARER",
-                icon = "https://cdn.eltrane.cloud/alkiarp/assets/radialmenus/repair.svg",
+                icon = "https://cdn.eltrane.cloud/3838384859/assets/radialmenus/repair.svg",
                 action = "OpenSubRadialJobs",
                 args = "repair"
             },
@@ -30,33 +30,33 @@ Society.newJob("beekers", {
         repair = {
             {
                 name = "NETTOYAGE",
-                icon = "https://cdn.eltrane.cloud/alkiarp/assets/radialmenus/sponge.svg",
+                icon = "https://cdn.eltrane.cloud/3838384859/assets/radialmenus/sponge.svg",
                 action = "CleanVehicle",
             },
             {
                 name = "CARROSSERIE",
-                icon = "https://cdn.eltrane.cloud/alkiarp/assets/radialmenus/car.svg",
+                icon = "https://cdn.eltrane.cloud/3838384859/assets/radialmenus/car.svg",
                 action = "RepairCarroserieVehicle"
             },
             {
                 name = "RETOUR",
-                icon = "https://cdn.eltrane.cloud/alkiarp/assets/radialmenus/leave.svg",
+                icon = "https://cdn.eltrane.cloud/3838384859/assets/radialmenus/leave.svg",
                 action = "OpenSubRadialJobs",
                 args = "main"
             },
             {
                 name = "MOTEUR",
-                icon = "https://cdn.eltrane.cloud/alkiarp/assets/radialmenus/engine.svg",
+                icon = "https://cdn.eltrane.cloud/3838384859/assets/radialmenus/engine.svg",
                 action = "RepairVehicle"
             }
         },
     },
-    Sonnette = Kipstz.Jobs.Beekers.Sonnette,
-    Gestion = Kipstz.Jobs.Beekers.Gestion,
-    Stockage = Kipstz.Jobs.Beekers.Stockage,
-    Casier = Kipstz.Jobs.Beekers.Casier,
+    Sonnette = BLK.Jobs.Beekers.Sonnette,
+    Gestion = BLK.Jobs.Beekers.Gestion,
+    Stockage = BLK.Jobs.Beekers.Stockage,
+    Casier = BLK.Jobs.Beekers.Casier,
     Catalogue = {
-        Position = Kipstz.Jobs.Beekers.Catalogue,
+        Position = BLK.Jobs.Beekers.Catalogue,
         Items = {
             { model = "repairkit" },
             { model = "cleankit" },
@@ -64,9 +64,9 @@ Society.newJob("beekers", {
             { model = "cordes" },
         }
     },
-    Vetement = Kipstz.Jobs.Beekers.Vetement,
+    Vetement = BLK.Jobs.Beekers.Vetement,
     Craft = {
-        Position = Kipstz.Jobs.Beekers.Craft,
+        Position = BLK.Jobs.Beekers.Craft,
         Items = {
             { name = "repairkit", label = "Kit de réparation", timer = 10, recipe = {
                 { name = "coffretoutils", label = "Coffret à Outils", amount = 1 },

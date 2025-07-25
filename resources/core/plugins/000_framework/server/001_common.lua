@@ -62,7 +62,7 @@ MySQL.ready(function()
     Core.DatabaseConnected = true
     if ConfigItemsBrut then
         for k, v in pairs(ConfigItemsBrut) do
-            VFW.Items[k] = { label = v.label, type = getTypeInventory(v.data.type), weight = v.weight, image = "https://cdn.eltrane.cloud/alkiarp/items/"..k..".webp", data = v.data, premium = v.premium, perm = v.perm }
+            VFW.Items[k] = { label = v.label, type = getTypeInventory(v.data.type), weight = v.weight, image = "https://cdn.eltrane.cloud/3838384859/items/"..k..".webp", data = v.data, premium = v.premium, perm = v.perm }
         end
     else
         print("[^1ERROR^7] ConfigItemsBrut is nil - items not loaded")

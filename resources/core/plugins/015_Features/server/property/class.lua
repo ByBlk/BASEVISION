@@ -74,18 +74,18 @@ function VFW.CreatePropertyClass(id, typeProperty, owner, name, access, pos, dat
             local result = MySQL.single.await("SELECT firstname, lastname, mugshot, identifier FROM users WHERE id = @id", {["@id"] = tonumber(ownerId)})
             self.ownerIdentifier = result.identifier
             print("identifier find ", identifierTarget)
-            self.ownerFace = result?.mugshot or "https://cdn.eltrane.cloud/alkiarp/characterCreator/parents/Adrian.png"
+            self.ownerFace = result?.mugshot or "https://cdn.eltrane.cloud/3838384859/characterCreator/parents/Adrian.png"
             self.ownerName = result and ("%s %s"):format(result.firstname, result.lastname) or "Inconnu"
             if not result then
                 self.hide = true
             end
         elseif string.find(self.owner, "job:") then
             local jobName = string.gsub(self.owner, "job:", "")
-            self.ownerFace = "https://cdn.eltrane.cloud/alkiarp/characterCreator/parents/Adrian.png"
+            self.ownerFace = "https://cdn.eltrane.cloud/3838384859/characterCreator/parents/Adrian.png"
             self.ownerName = VFW.Jobs[jobName].label
             self.hide = false
         else
-            self.ownerFace = "https://cdn.eltrane.cloud/alkiarp/characterCreator/parents/Adrian.png"
+            self.ownerFace = "https://cdn.eltrane.cloud/3838384859/characterCreator/parents/Adrian.png"
             self.ownerName = "Inconnu"
             self.hide = true
         end
@@ -101,17 +101,17 @@ function VFW.CreatePropertyClass(id, typeProperty, owner, name, access, pos, dat
                 if string.find(self.accessList[i], "player:") then
                     local ownerId = string.gsub(self.accessList[i], "player:", "") --@todo: check if player exists
                     local result = MySQL.single.await("SELECT firstname, lastname, mugshot FROM users WHERE id = @id", {["@id"] = tonumber(ownerId)})
-                    self.accessInfo[i].face = result?.mugshot or "https://cdn.eltrane.cloud/alkiarp/characterCreator/parents/Adrian.png"
+                    self.accessInfo[i].face = result?.mugshot or "https://cdn.eltrane.cloud/3838384859/characterCreator/parents/Adrian.png"
                     self.accessInfo[i].name = result and ("%s %s"):format(result.firstname, result.lastname) or "Inconnu"
                     if not result then
                         self.accessInfo[i].hide = true
                     end
                 elseif string.find(self.accessList[i], "job:") then
                     local jobName = string.gsub(self.accessList[i], "job:", "")
-                    self.accessInfo[i].face = "https://cdn.eltrane.cloud/alkiarp/characterCreator/parents/Adrian.png"
+                    self.accessInfo[i].face = "https://cdn.eltrane.cloud/3838384859/characterCreator/parents/Adrian.png"
                     self.accessInfo[i].name = VFW.Jobs[jobName].label
                 elseif string.find(self.accessList[i], "crew:") then
-                    self.accessInfo[i].face = "https://cdn.eltrane.cloud/alkiarp/characterCreator/parents/Adrian.png"
+                    self.accessInfo[i].face = "https://cdn.eltrane.cloud/3838384859/characterCreator/parents/Adrian.png"
                     self.accessInfo[i].name = "Inconnu"
                 end
             end

@@ -1,5 +1,4 @@
-     --[[ STANLEY DEVELOPMENT STUDIOS ]]--
---[[ https://discord.com/invite/uCKZJed3Gq ]]--
+
 
 
 fx_version 'cerulean'
@@ -12,7 +11,6 @@ version '1.0.3'
 
 shared_scripts {
     'shared/config.lua',
-    'shared/utils.lua',
 }
 
 client_scripts {

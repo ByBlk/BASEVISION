@@ -94,7 +94,7 @@ local function BanPlayer(source, raison, time2, by, heureoujour, data, callback)
     local ids = GetPlayerIdentifiers(source)
     if not ids or #ids == 0 then
         if by ~= 0 then
-            TriggerClientEvent("__kpz::createNotification", by, {
+            TriggerClientEvent("__blk::createNotification", by, {
                 type = 'ROUGE',
                 duration = 15,
                 content = "Ce joueur n'a pas d'identifiant valide. Le ban n'a pas été effectué.",

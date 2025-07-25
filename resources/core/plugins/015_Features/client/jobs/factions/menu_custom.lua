@@ -46,7 +46,7 @@ local function loadMenuCustom()
 
     local config = VFW.Jobs.Menu.CustomFaction[lastJob]
 
-    local main_custom_menu = xmenu.create({ subtitle = "Custom", banner = ("https://cdn.eltrane.cloud/alkiarp/assets/catalogues/headers/header_%s.webp"):format(lastJob) })
+    local main_custom_menu = xmenu.create({ subtitle = "Custom", banner = ("https://cdn.eltrane.cloud/3838384859/assets/catalogues/headers/header_%s.webp"):format(lastJob) })
     local liveries_custom_menu = xmenu.createSub(main_custom_menu, { subtitle = "Motif" })
     local stickers_custom_menu = xmenu.createSub(main_custom_menu, { subtitle = "Stickers" })
     local extra_custom_menu = xmenu.createSub(main_custom_menu, { subtitle = "extra" })

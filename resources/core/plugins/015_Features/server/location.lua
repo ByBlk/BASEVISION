@@ -90,8 +90,8 @@ AddEventHandler("core:server:setLocation", function(model, category, coords, hea
     local xPlayer = VFW.GetPlayerFromId(source)
     if not xPlayer then return end
 
-    if xPlayer.getMoney() < Kipstz.Shop.Location.Vehicule[category][model].price then
-        TriggerClientEvent("nui:newgrandmenu:notify", source, "rouge", "Fonds insuffisants", "~r~" .. Kipstz.Shop.Location.Vehicule[category][model].price .. " $")
+    if xPlayer.getMoney() < BLK.Shop.Location.Vehicule[category][model].price then
+        TriggerClientEvent("nui:newgrandmenu:notify", source, "rouge", "Fonds insuffisants", "~r~" .. BLK.Shop.Location.Vehicule[category][model].price .. " $")
         return
     end
 
@@ -101,7 +101,7 @@ AddEventHandler("core:server:setLocation", function(model, category, coords, hea
     local plate = GetVehicleNumberPlateText(NetworkGetEntityFromNetworkId(networkId))
     VFW.GiveKeyTemporaly(source, "auther", plate)
     startRental(source, networkId)
-    xPlayer.removeMoney(Kipstz.Shop.Location.Vehicule[category][model].price)
+    xPlayer.removeMoney(BLK.Shop.Location.Vehicule[category][model].price)
 end)
 
 AddEventHandler("vfw:playerDropped", function(source)

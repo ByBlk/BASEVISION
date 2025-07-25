@@ -2,27 +2,27 @@ while not ConfigManager do Wait(100) end
 while not ConfigManager.Config.society do Wait(100) end
 if not ConfigManager.Config.society["harmony"] then return end
 Society.newJob("harmony", {
-    Blips = Kipstz.Jobs.Harmony.Blips,
+    Blips = BLK.Jobs.Harmony.Blips,
     Radial = {
         main = {
             {
                 name = "ANNONCE",
-                icon = "https://cdn.eltrane.cloud/alkiarp/assets/radialmenus/megaphone.svg",
+                icon = "https://cdn.eltrane.cloud/3838384859/assets/radialmenus/megaphone.svg",
                 action = "CreateJobAdvert",
             },
             {
                 name = "FACTURE",
-                icon = "https://cdn.eltrane.cloud/alkiarp/assets/radialmenus/billet.svg",
+                icon = "https://cdn.eltrane.cloud/3838384859/assets/radialmenus/billet.svg",
                 action = "OpenInvoice"
             },
             {
                 name = "PRISE DE SERVICE",
-                icon = "https://cdn.eltrane.cloud/alkiarp/assets/radialmenus/checkmark.svg",
+                icon = "https://cdn.eltrane.cloud/3838384859/assets/radialmenus/checkmark.svg",
                 action = "SetJobDuty",
             },
             {
                 name = "REPARER",
-                icon = "https://cdn.eltrane.cloud/alkiarp/assets/radialmenus/repair.svg",
+                icon = "https://cdn.eltrane.cloud/3838384859/assets/radialmenus/repair.svg",
                 action = "OpenSubRadialJobs",
                 args = "repair"
             },
@@ -30,33 +30,33 @@ Society.newJob("harmony", {
         repair = {
             {
                 name = "NETTOYAGE",
-                icon = "https://cdn.eltrane.cloud/alkiarp/assets/radialmenus/sponge.svg",
+                icon = "https://cdn.eltrane.cloud/3838384859/assets/radialmenus/sponge.svg",
                 action = "CleanVehicle",
             },
             {
                 name = "CARROSSERIE",
-                icon = "https://cdn.eltrane.cloud/alkiarp/assets/radialmenus/car.svg",
+                icon = "https://cdn.eltrane.cloud/3838384859/assets/radialmenus/car.svg",
                 action = "RepairCarroserieVehicle"
             },
             {
                 name = "RETOUR",
-                icon = "https://cdn.eltrane.cloud/alkiarp/assets/radialmenus/leave.svg",
+                icon = "https://cdn.eltrane.cloud/3838384859/assets/radialmenus/leave.svg",
                 action = "OpenSubRadialJobs",
                 args = "main"
             },
             {
                 name = "MOTEUR",
-                icon = "https://cdn.eltrane.cloud/alkiarp/assets/radialmenus/engine.svg",
+                icon = "https://cdn.eltrane.cloud/3838384859/assets/radialmenus/engine.svg",
                 action = "RepairVehicle"
             }
         },
     },
-    Sonnette = Kipstz.Jobs.Harmony.Sonnette,
-    Gestion = Kipstz.Jobs.Harmony.Gestion,
-    Stockage = Kipstz.Jobs.Harmony.Stockage,
-    Casier = Kipstz.Jobs.Harmony.Casier,
+    Sonnette = BLK.Jobs.Harmony.Sonnette,
+    Gestion = BLK.Jobs.Harmony.Gestion,
+    Stockage = BLK.Jobs.Harmony.Stockage,
+    Casier = BLK.Jobs.Harmony.Casier,
     Catalogue = {
-        Position = Kipstz.Jobs.Harmony.Catalogue,
+        Position = BLK.Jobs.Harmony.Catalogue,
         Items = {
             { model = "repairkit" },
             { model = "cleankit" },
@@ -64,10 +64,10 @@ Society.newJob("harmony", {
             { model = "cordes" },
         }
     },
-    Vetement = Kipstz.Jobs.Harmony.Vetement,
-    Garage = Kipstz.Jobs.Harmony.Craft,
+    Vetement = BLK.Jobs.Harmony.Vetement,
+    Garage = BLK.Jobs.Harmony.Craft,
     Craft = {
-        Position = Kipstz.Jobs.Harmony.Craft,
+        Position = BLK.Jobs.Harmony.Craft,
         Items = {
             { name = "repairkit", label = "Kit de réparation", timer = 10, recipe = {
                 { name = "coffretoutils", label = "Coffret à Outils", amount = 1 },
