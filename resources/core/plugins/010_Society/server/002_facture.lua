@@ -109,6 +109,14 @@ RegisterNetEvent("vfw:invoice:sendRecu", function(id, data)
     local source = source
     local xPlayer = VFW.GetPlayerFromId(source)
     local tPlayer = VFW.GetPlayerFromId(id)
+    print("[DEBUG TYPE DATA]", type(data))
+    
+    if type(data) == "table" then
+        data.date = os.date("%d/%m/%Y - %H:%M")
+        data.employee = "Grossiste" -- employé fixe
+        data.customer = tPlayer and tPlayer.getName() or "Inconnu" 
+    end
+    print("[DEBUG DATA AVANT AJOUT]", json.encode(data))
     tPlayer.showNotification({
         type = 'VERT',
         content = "Vous avez reçu une facture",
@@ -118,8 +126,10 @@ RegisterNetEvent("vfw:invoice:sendRecu", function(id, data)
         content = "Vous avez envoyé une facture",
     })
     xPlayer.addItem("papier", 1, data)
+    print("[DEBUG PAPIER] data envoyé à xPlayer : " .. json.encode(data))
     xPlayer.updateInventory()
     tPlayer.addItem("papier", 1, data)
+    print("[DEBUG PAPIER] data envoyé à tPlayer : " .. json.encode(data))
     tPlayer.updateInventory()
 end)
 

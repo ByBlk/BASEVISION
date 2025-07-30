@@ -265,7 +265,10 @@ VFW.Nui.deathScreen = function(visible, secToWait)
     local playerdata = VFW.PlayerGlobalData
     SendNUIMessage({
         action = "nui:deathscreen:visible",
-        data = visible
+        data = {
+            visible = visible,
+            secToWait = secToWait
+        }
     })
 
     SendNUIMessage({

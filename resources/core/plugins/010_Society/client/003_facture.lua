@@ -55,7 +55,7 @@ local function OpenInvoice()
     VFW.Nui.Invoice(true, {
         sender = VFW.PlayerData.name,
         receiver = tName,
-        date = "10/01/2025 - 23:12",
+        date = os.date("%d/%m/%Y - %H:%M"), -- date dynamique
         reduce = 0,
         items = {},
         total = 0,
